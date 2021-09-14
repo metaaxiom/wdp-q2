@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display and Float Testing Ground</title>
+    <style>
+        .generic-box {
+            box-sizing: border-box; /* padding won't be added to width */
+            padding: 10px;
+            border: 1px solid black;
+            /* display: block; default */
+            /* display: inline; */
+            display: inline-block;
+            /* margin: 10px; */
+            width: calc(50% - 2px); /* 50% of the container's width */
+        }
+
+        header nav ol {
+            list-style: none;
+            padding-left: 0;
+        }
+        header nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        header nav li:last-child {
+            margin-right: 0;
+        }
+
+        #image-1 {
+            width: 160px;
+            float: left;
+            margin: 0 10px 2px 0;
+        }
+        #par-1 {
+            margin: 0;
+        }
+
+        #float-container {
+            margin-top: 20px;
+        }
+        #float-container .floated-divs {
+            border: 1px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .clearfix::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV MENU USING DISPLAY: INLINE-BLOCK -->
+    <header>
+        <nav>
+            <ol>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Services</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- BOXES ALIGNED SIDE BY SIDE USING INLINE-BLOCK (WITH GAP) -->
+    <div id="box-1" class="generic-box">
+        Box 1
+    </div>
+    <div id="box-2" class="generic-box">
+        Box 2
+    </div>
+
+    <!-- TEXT FLOATED AROUND AN IMAGE -->
+    <img id="image-1" src="image1.jpg" alt="meadow mountains">
+    <p id="par-1">
+        Reprehenderit ad incididunt laboris nisi quis. Fugiat adipisicing enim incididunt aliqua laboris dolor. Ad eu mollit reprehenderit pariatur non amet amet reprehenderit id. Nostrud tempor nulla proident enim magna irure. Id minim enim incididunt labore. Elit proident excepteur cillum anim in est reprehenderit duis. Cillum duis deserunt officia nostrud in amet fugiat ex mollit incididunt exercitation incididunt non fugiat. Anim voluptate occaecat aliqua dolor eu et ad quis labore. Cupidatat incididunt ut nisi aliquip duis anim do in laborum ullamco cupidatat id sunt. Consectetur proident amet ex ex duis consectetur minim aute nisi qui. Duis duis et eu aute amet sit incididunt. Laborum excepteur quis veniam id eu tempor Lorem reprehenderit deserunt ex nostrud ut deserunt. Aliquip aliqua qui culpa commodo velit minim et do irure ipsum occaecat. Cillum magna minim laboris quis sit esse consequat occaecat minim enim duis ex adipisicing mollit. Elit sint ullamco tempor duis sunt ad laboris ad. Culpa commodo pariatur ex adipisicing ea et sunt magna consectetur. Aute fugiat pariatur cupidatat veniam laborum cillum nulla. In do do deserunt ipsum dolore ea laborum. Duis aliquip id qui non magna. Qui occaecat commodo eiusmod in reprehenderit adipisicing duis. Anim velit Lorem excepteur commodo sunt fugiat irure amet nostrud est.
+    </p>
+
+    <div id="float-container" class="clearfix">
+        <div class="floated-divs">Float Box 1</div>
+        <div class="floated-divs">Float Box 2</div>
+        <div class="floated-divs">fdgdgd</div>
+        <div class="floated-divs">duighidufghidhfgi</div>
+    </div>
+
+    <div>Hello</div>
+
+</body>
+</html>

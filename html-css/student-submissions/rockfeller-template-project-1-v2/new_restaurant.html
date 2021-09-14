@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flexbox Basics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /*
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Parisienne', cursive;
+      */
+      body {
+          margin: 0;
+          font-family: 'Montserrat', sans-serif;
+      }
+
+
+      h1, h2 ,h4 {
+          font-family: 'Parisienne', cursive;
+      }
+      h4 {
+          text-decoration:underline;
+          font-size: 30px;
+          font-weight: bold;
+      }
+       /*#header-inner {
+           background-color: burlywood;
+       } */
+      }
+
+      header {
+          background: whitesmoke;
+      }
+      header .row {
+          align-items: center;
+      }
+      header .generic-container {
+          padding: 12px 0;
+      }
+      header #logo {
+          margin: 0;
+
+      }
+      header nav {
+          text-align: right;
+      }
+      header nav ol {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+      }
+      header nav a:hover{
+          background-color: #ccc;
+      }
+      header nav li {
+          display: inline-block;
+          margin-right: 20px;
+      }
+      header nav a{
+          font-weight: bolder;
+      }
+      header nav li:last-child {
+          margin-right: 0;
+      }
+
+      .generic-container {
+          width: 95%;
+          max-width: 980px;
+          margin: 0 auto;
+          box-sizing: border-box;
+      }
+      .row {
+          display:flex;
+          flex-wrap: wrap; /* flexbox elements will break onto seperate lines */
+      }
+      .col-12 {
+          flex-basis: 100%;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      .col-8 {
+          flex-basis: 66.66% ;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      .col-6 {
+          flex-basis: 50%;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      .col-4 {
+          flex-basis: 33.33%;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      .col-3 {
+          flex-basis: 25%;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      .col-2 {
+          flex-basis: 16.66%;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+
+      #hero {
+          text-align: center;
+          height: 400px;
+          width: 100%;
+          background: lightblue;
+          background-image: url('img/pexels-rene-asmussen.jpg');
+          background-size :cover;
+          background-position: center;
+          background-repeat: no-repeat;
+      }
+      #hero h2 {
+          margin: 0;
+          font-size: 4em;
+          padding: calc(200px - 44px);
+          color: #fff;
+
+      }
+
+       .row generic-container{
+          background-color:burlywood;
+      }
+
+      section#features {
+          background: lightblue;
+      }
+      section#features .generic-container {
+          padding-top: 20px;
+          padding-bottom: 20px;
+      }
+      .feature-block {
+         background-color: bisque;
+          border-radius: 3px;
+          padding: 10px;
+      }
+      .feature-block h4 {
+          margin-top: 0;
+      }
+      .feature-block p {
+          margin-bottom: 0;
+      }
+
+      section#contact h3 {
+          margin-top: 0;
+      }
+      section#contact .generic-container {
+          padding-top: 20px;
+          padding-bottom: 40px;
+      }
+      li , button{
+          cursor: pointer;
+      }
+      #contact{
+         /* background-color:#E7BC91; */
+          background-image: url('./img/cork-board.png');
+          background-repeat: repeat;
+      }
+      #contact-description span {
+          font-size: 28px;
+      }
+      #contact-form {
+          background:lightblue;
+          padding: 15px;
+      }
+      .form-background {
+
+          background-color: #ede0d4;
+
+      }
+      form#contact-form {}
+      form#contact-form label {
+          display: block;
+      }
+      form#contact-form input,
+      form#contact-form textarea {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 5px;
+          font-size: 16px;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-bottom: 12px;
+      }
+       form#contact-form button :hover{
+          background-color:blue ;
+      }
+
+      footer {
+          background: #F3D5B5;
+
+      }
+      footer p {
+          text-align :center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="header-inner" class="row generic-container">
+        <div class="col-4">
+          <h1 class="logo">
+            <b>T</b><sub>he</sub> &nbsp<b>A</b><sup>mbiance</sup>&nbsp<b>R</b
+            ><sub>estaurant</sub>
+          </h1>
+        </div>
+        <nav class="col-8">
+          <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Reservations</a></li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div id="hero">
+        <div class="generic-container">
+          <h2>Cuisine at it Finest</h2>
+        </div>
+      </div>
+
+      <section>
+        <div class="row generic-container image-background">
+          <div class="col-6">
+            <img src="img/fine-cuisine.jpg" alt="Fine cuisine at its best" />
+          </div>
+          <div class="col-6">
+            <h3>Come for the food, stay for the ambiance &#9836; &#9836;</h3>
+            <p>
+              Adipisicing do ut dolore incididunt nostrud nisi ullamco proident
+              non irure. Excepteur excepteur exercitation deserunt laboris
+              cillum aliqua commodo anim sint consectetur. Excepteur minim
+              tempor elit non.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="row generic-container">
+          <div class="col-4">
+            <div class="feature-block">
+              <h4 class="meal-selection"><b>A</b>muse-gueule</h4>
+              <p>Irure labore irure nisi velit sunt.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="feature-block">
+              <h4 class="meal-selection"><b>&#8364;</b>ntrees</h4>
+              <p>Irure labore irure nisi velit sunt.</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="feature-block">
+              <h4 class="meal-selection"><b>D</b>rinks</h4>
+              <p>Irure labore irure nisi velit sunt.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="row generic-container">
+          <div class="col-6">
+            <div id="contact-description">
+              <h3>
+                Get in Touch
+                <span
+                  >&#9755; &#9755; &#9755; &#9755; &#9755; &#9755; &#9755;
+                  &#9755; &#9755; &#9755;</span
+                >
+              </h3>
+              <p>
+                Exercitation nostrud ea ex sunt occaecat amet ullamco anim. Ut
+                mollit Lorem pariatur duis. Non anim culpa deserunt qui est
+                ullamco amet occaecat exercitation cupidatat. Eiusmod ipsum do
+                incididunt sunt id qui velit sit sit. Reprehenderit eiusmod ut
+                labore ut deserunt.
+              </p>
+            </div>
+          </div>
+          <div class="col-6" form-background>
+            <!--
+                    Two methods of form submission:
+
+                    1. GET: transfers submitted form data through the URL
+                    2. POST: tranfers submitted form data through an HTTP / HTTPS header, which makes it more secure (especially when using HTTPS, because then the data is encrypted)
+
+                    The action attribute specifies WHERE the data should be sent to (what URL)
+                    -->
+            <form id="contact-form" method="GET">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" />
+
+              <label for="message">Message</label>
+              <textarea id="message" rows="10"></textarea>
+
+              <button>Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="row generic-container">
+        <div class="col-12">
+          <p>Copyright 2021 &copy;, All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

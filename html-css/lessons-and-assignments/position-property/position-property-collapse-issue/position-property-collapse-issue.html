@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Position Property Collapse Issue</title>
+    <style>
+      #container {
+        border: 1px solid black;
+      }
+      button#x-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+        background: rgb(255, 58, 58);
+        color: #fff;
+        padding: 4px;
+        border-radius: 100%;
+        height: 24px;
+        width: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      Observe that #container has collapsed. Normally, its height would be determined
+      by the size of its content (#x-btn). But, since #x-btn has been assigned
+      position: absolute, it's taken out of the normal webpage "flow",and therefore 
+      stops affecting the content space within #container. The end result is that
+      #container behaves as if it didn't have any content, causing it to collapse.
+    -->
+    <div id="container">
+      <button id="x-btn">X</button>
+    </div>
+  </body>
+</html>

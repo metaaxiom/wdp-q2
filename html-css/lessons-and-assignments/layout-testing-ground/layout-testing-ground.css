@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+}
+.g-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header {
+  background:lightblue;
+  padding: 20px 0;
+}
+#logo-wrapper {
+  display: inline-block;
+  width: 20%;
+}
+#main-menu {
+  display: inline-block;
+  width: 80%;
+  margin-left: -4px;
+}
+#main-menu ol {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+#main-menu li {
+  display: inline-block;
+  margin-right: 15px;
+}
+#main-menu li:last-child {
+  margin-right: 0;
+}
+
+main {
+  min-height: 805px;
+}
+
+#display-container {
+  border: 1px solid #000;
+  /* width: 600px; */
+}
+.display-box {
+  background-color: rgb(0, 132, 255);
+  color: #fff;
+  border: 1px solid rgb(0, 67, 122);
+}
+#display-block-box {
+  
+}
+#display-inline-box {
+  display: inline; /* change default display from block to inline */
+  padding: 10px;
+  margin: 10px;
+}
+#display-inline-block-box {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+}
+#display-none-box {
+  display: none;
+  /* visibility: hidden; */
+}
+
+#circle {
+  margin: 20px 0;
+  height: 500px;
+  width: 500px;
+  background: red;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+}
+#inner-circle {
+  background: blue;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+#block-section {
+  margin: 20px 0;
+}
+.block-section__block {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 30%;
+  min-height: 152px;
+  margin-right: calc(5% - 4px);
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: center;
+}
+.block-section__block:last-child {
+  margin-right: 0;
+}
+
+#image-float-section img {
+  float: right;
+  margin-right: 10px;
+}
+
+/* #example-content-box {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  border: 1px solid black;
+}
+#example-border-box {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  border: 1px solid black;
+} */
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgb(85, 85, 85);
+  color: #fff;
+}
+footer .g-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

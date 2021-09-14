@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML & CSS Example Layout 1</title>
+    <!--
+    There are 3 ways to add CSS to HTML files.
+
+    1. Import an external CSS stylesheet using the link tag, like so:
+    <link rel="stylesheet" href="index.css">
+
+    2. Embed CSS code within the current HTML directly, using style tags: -->
+    <link rel="stylesheet" href="./introduction-to-css.css">
+    <style>
+
+    header {
+      border-bottom: 1px solid gray;
+    }
+    nav {
+      display: inline-block;
+    }
+    header nav li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    footer {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid gray;
+      text-align: center;
+      color: darkgray;
+      background-color: black;
+    }
+
+    div {
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <a href="/">Logo</a>
+      <nav>
+        <ol>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+
+    <main>
+
+      <!---
+      3. It's also possible to add inline CSS code directly to an element,
+      using the style attribute:
+
+      <h1 style="color: red;">Page Heading</h1>
+
+      However, this method produces unorganized, hard-to-follow code, and should be avoided,
+      unless the 2 aforementioned ways of adding CSS are unavailable for some reason
+      -->
+
+      <h1>Page Heading</h1>
+      <p>Officia duis enim elit esse. Aute voluptate Lorem culpa exercitation tempor magna occaecat mollit reprehenderit ut non voluptate. Irure esse dolor nisi culpa mollit labore nisi enim aute ex ex qui voluptate nisi. Ut est voluptate aliqua culpa Lorem incididunt quis laboris ullamco occaecat. Eiusmod laboris consequat in incididunt veniam est proident Lorem in. Quis adipisicing irure adipisicing enim occaecat elit elit in do. Deserunt nostrud nisi amet minim eu quis elit.</p>
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ul>
+      <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ol>
+
+      <div>
+        Some text content
+      </div>
+    </main>
+
+    <footer>Copyright &copy; 2021</footer>
+
+  </body>
+</html>

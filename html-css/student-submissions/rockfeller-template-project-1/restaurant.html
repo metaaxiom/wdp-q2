@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox Basics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Parisienne&display=swap" rel="stylesheet">
+
+    <style>
+    /*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Parisienne', cursive;
+    */
+    body {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h1, h2 {
+        font-family: 'Parisienne', cursive; 
+    }
+
+    header {
+        background: #ede0d4;
+    }
+    header .row {
+        align-items: center;
+    }
+    header .generic-container {
+        padding: 12px 0;
+    }
+    header #logo {
+        margin: 0;
+    }
+    header nav {
+        text-align: right;
+    }
+    header nav ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    header nav li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    header nav li:last-child {
+        margin-right: 0;
+    }
+
+    .generic-container {
+        width: 95%;
+        max-width: 980px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .row {
+        display:flex;
+        flex-wrap: wrap; /* flexbox elements will break onto seperate lines */
+    }
+    .col-12 { 
+        flex-basis: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col-8 {
+        flex-basis: 66.66% ;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col-6 {    
+        flex-basis: 50%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col-4 {
+        flex-basis: 33.33%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col-3 {
+        flex-basis: 25%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col-2 {
+        flex-basis: 16.66%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #hero {
+        text-align: center;
+        height: 400px;
+        background: lightblue;
+        background-image: url('pexels-rene-asmussen.jpg');
+    }
+    #hero h2 {
+        margin: 0;
+    }
+
+    section#features {
+        background: #ccc;
+    }
+    section#features .generic-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .feature-block {
+        background: #ede0d4;        
+        border-radius: 3px;
+        padding: 10px;
+    }
+    .feature-block h4 {
+        margin-top: 0;
+    }
+    .feature-block p {
+        margin-bottom: 0;
+    }
+
+    section#contact h3 {
+        margin-top: 0;
+    }
+    section#contact .generic-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #contact-form {
+        background:lightblue;
+    }
+    .form-background {
+        background: #ede0d4;        
+
+    }
+    form#contact-form {}
+    form#contact-form label {
+        display: block;
+    }
+    form#contact-form input, 
+    form#contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 12px;
+    }
+
+    footer {
+        margin-top: 40px;
+        background: #ede0d4;
+    }
+    footer p {
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header-inner" class="row generic-container">
+            <div class="col-4">
+                <h1 id="logo">Restaurant</h1>
+            </div>
+            <nav class="col-8">
+                <ol>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservations</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="hero"> 
+            <div class="generic-container">
+                <h2>Some Text Here Overalyign and Image</h2>
+            </div>
+        </div>
+
+        <section>
+            <div class="row generic-container">
+                <div class="col-4">IMAGE</div>
+                <div class="col-8">
+                    <h3>Something About Us</h3>
+                    <p>Adipisicing do ut dolore incididunt nostrud nisi ullamco proident non irure. Excepteur excepteur exercitation deserunt laboris cillum aliqua commodo anim sint consectetur. Excepteur minim tempor elit non.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="row generic-container">
+                <div class="col-4">
+                    <div class="feature-block">
+                        <h4>Feature One</h4>
+                        <p>Irure labore irure nisi velit sunt.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="feature-block">
+                        <h4>Feature Two</h4>
+                        <p>Irure labore irure nisi velit sunt.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="feature-block">
+                        <h4>Feature Three</h4>
+                        <p>Irure labore irure nisi velit sunt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="row generic-container">
+                <div class="col-6">
+                    <div id="contact-description">
+                        <h3>Get in Touch</h3>
+                        <p>Exercitation nostrud ea ex sunt occaecat amet ullamco anim. Ut mollit Lorem pariatur duis. Non anim culpa deserunt qui est ullamco amet occaecat exercitation cupidatat. Eiusmod ipsum do incididunt sunt id qui velit sit sit. Reprehenderit eiusmod ut labore ut deserunt.</p>
+                    </div>
+                </div>
+                <div class="col-6" form-background>
+                    <!--
+                    Two methods of form submission:
+
+                    1. GET: transfers submitted form data through the URL
+                    2. POST: tranfers submitted form data through an HTTP / HTTPS header, which makes it more secure (especially when using HTTPS, because then the data is encrypted)
+
+                    The action attribute specifies WHERE the data should be sent to (what URL)
+                    -->
+                    <form id="contact-form" method="GET">
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject">
+
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="10"></textarea>
+
+                        <button>Send</button>
+                    </form>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="row generic-container">
+            <div class="col-12">
+                <p>Copyright 2021 &copy;, All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

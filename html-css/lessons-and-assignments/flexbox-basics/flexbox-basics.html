@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics</title>
+    <style>
+        #container-1 {
+            display: flex; /* turns on flex */
+            border: 1px solid blue;
+            padding: 5px;
+        }
+        #container-1-box-1,
+        #container-1-box-2 {
+            border: 1px solid red;
+            padding: 5px;
+        }
+        #container-1-box-1 div,
+        #container-1-box-2 div {
+            background: #57cb57;
+            padding: 5px;
+        }
+
+        #container-2 {
+            margin-top: 20px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #container-2-box-1, 
+        #container-2-box-2, 
+        #container-2-box-3,
+        #container-2-box-4 {
+            box-sizing: border-box;
+            background: #6ac8ff;
+            padding: 5px;
+            margin-right: 10px;
+            flex-basis: calc(50% - 5px);
+            text-align: center;            
+        }
+        #container-2 :nth-child(2),
+        #container-2 :nth-child(4) {
+            margin-right: 0;
+        }
+
+        #container-3 {
+            margin-top: 20px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+        #container-3-box-1,
+        #container-3-box-2,
+        #container-3-box-3 {
+            background: #6ac8ff;
+            padding: 5px;
+            /* 
+            flex-basis refers to width if flex-direction is row / row-reverse 
+            flex-basis refers to height if flex-direction is column / column-reverse
+            */
+            flex-basis: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flexbox only affects the direct children, not the grandchildren -->
+    <div id="container-1">
+        <div id="container-1-box-1">
+            <div>A</div>
+            <div>B</div>
+        </div>
+        <div id="container-1-box-2">
+            <div>C</div>
+            <div>D</div>
+        </div>
+    </div>
+
+    <div id="container-2">
+        <div id="container-2-box-1">A</div>
+        <div id="container-2-box-2">B</div>
+        <div id="container-2-box-3">C</div>
+        <div id="container-2-box-4">D</div>
+    </div>
+
+    <div id="container-3">
+        <div id="container-3-box-1">A</div>
+        <div id="container-3-box-2">B</div>
+        <div id="container-3-box-3">C</div>
+    </div>
+</body>
+</html>
