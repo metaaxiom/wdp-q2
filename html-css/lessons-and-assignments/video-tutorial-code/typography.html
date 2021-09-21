@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Typography, Lists, Links</title>
+    </head>
+    <body>
+        <h1>HTML Typography, Lists, Links</h1>
+
+        <p>The "p" tag is one of the most basic typography tags, and is used to separate paragraphs. This very text is contained inside a <code>&lt;p&gt;</code>. Notice that paragraph elements will by default space themselves out. The gaps that appear between them vertically are the result of top and bottom margins (margins are <strong>outer</strong> spacing, applied around an element). Now, margins are not strictly speaking HTML; they are actually CSS properties, which are applied on certain HTML elements. But, HTML and CSS are used together, and so most HTML elements have certain default CSS properties. Case in point, the h1 tag shown above comes with a default font size, and - just as the p tag - margins at the top and bottom.</p>
+
+        <p>If you're using the Google Chrome browser, you can actually check what CSS properties are applied on each element. Go ahead and right-click on the h1 above, and click "Inspect" (in the browser window, not the code). A Chrome DevTools (Developer Tools) panel should show up. Within this panel, under the "Styles" tab (should be on the right), you should see references to CSS properties such as display, font-size, font-weight, and margins. Those are the defaults that the h1 tag has.</p>
+
+        <p>When we write our own CSS code, we can choose to override these default properties, and apply our own. The properties listed under the "Styles" tab of the h1 tag are just a few of the <b>hundreds</b> of properties that CSS provides us with. With this large set of styling options, we make our HTML elements look any way we want.</p>
+
+        <hr>
+
+        <p>There are 6 heading tags: h1 (shown at the top) is the largest, and h6 (shown below) is the smallest.</p>
+
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <hr>
+
+        <p>Let's observe how I have used some of the other HTML tags at the top.</p>
+        
+        <p>I have been using <code>&lt;hr&gt;</code> to seperate different sections of content. In the book, the "hr" tag also includes a slash (as does the "br" tag). This used to be required in the past, but is no longer necessary in newer versions of HTML. So, we can omit the slash ("/"). Note also that both, "hr" and "br" are self-closing elements (they're composed of an opening tag, but no closing tag).</p>
+
+        <p>In the above paragraph, I used "code" tags, to display the syntax of the "hr" tag (I also did the same thing for "p" tags in the first paragraph). These "code" tags will by default change the font of the text they wrap around to a font more reminiscent of code editors or the command line. They also carry <em>semantic</em> meaning: their content is computer code.</p>
+
+        <p>Here's another example, this time of a two-line code block (you don't need to understand the JavaScript code between the code tags):</p>
+
+        <code>
+            let message = "Hello World";<br>
+            console.log(message);
+        </code>
+    
+        <p>You'll observe that in cases where I displayed the "p" and "hr" tags within angle brackets, they are prefaced with "[ampersand]lt;" and suffixed with "[ampersand]gt;". These two strange sets of symbols are examples of what we call "HTML entities", and they are rendered by the browser as less-than and greater-than characters (or left and right angle brackets, if you prefer). The reason why I didn't just use the literal angle brackets in their place is that angle brackets are registered HTML syntax. Whenever you use an angle bracket within an HTML document, the browser assumes that you're writing a tag, and so it doesn't render the character on the page literally. So, if you want to display an angle bracket directly, you need a workaround - which HTML entities provide.</p>
+        
+        <p>Most often, however, entities are used to display characters on the page for which we don't have keyboard keys, such as the registered trademark ("&copy;"). You can see more examples of HTML entities <a href="https://www.w3schools.com/html/html_entities.asp" target="_blank">here</a>.</p>
+
+        <hr>
+
+        <p>Let's go over bold and italic styling. There are two main ways to make text bold: using "b" tags or using "strong" tags. Functionally, both are the same, but "strong" tags indicate strong emphasis, while "b" tags are purely stylistic.</p>
+
+        <p>There are also two main ways of making text italic: using "i" tags or using "em" tags. They are also both functionally identical, and their difference comes down to semantics: "em" tags indicate emphasis, while "i" tags are purely stylistic.</p>
+
+        <hr>
+
+        <blockquote>This is a blockquote. By default, it will be indented (again, the exact appearance of any HTML element can be modified using CSS, but its semantic meaning - what content the tag will contain according to its name - is important). Usually a blockquote will occupy several lines, and be therefore placed outside a paragraph tag.</blockquote>
+
+        <p>Since the "q" tag is often only one line or just a few words, it will frequently be included within a "p" tag, <q>just like this</q>. By default, it will be surrounded by quotation marks (even when we don't write the marks ourselves).</p>
+
+        <hr>
+
+        <p>You can provide explanations of your abbreviations using the "abbr" tag. Hover with your mouse over the terms "HTML" and "CSS" in the below paragraph:</p>
+
+        <p><abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are usually used together.</p>
+
+        <hr>
+
+        <p>Links can be added to a page using the anchor ("a") tag. We simply wrap the text that we want to turn into a link with these "a" tags, and add the "href" attribute in order to tell the browser where the link should point to. <a href="https://google.com">This link</a> points to Google. By default it will appear blue and underlined, but once you click it, and go back to the page where the link was, it will have turned purple. This is because links have <em>states</em>. Once a link has been clicked, it is marked as "visited". Another important link state is "hover". It controls the appearance of the link when a mouse is hovering over it (this is how some websites change a link's color on hover). We'll see how to take full adventage of these link states once we start learning CSS.</p>
+
+        <p>If you want a link to open in a seperate page, you can add the "target" attribute and give it a value of "_blank", <a href="https://google.com" target="_blank">like this</a>. There are other values that can be supplied to this target attribute ("_self") is the default, but they are rarely used in practice.</p>
+
+        <hr>
+
+        <p>There are two main types of lists in HTML: ordered ("ol") and unordered ("ul"). Here are examples of each:</p>
+
+        <h3>Positions of Planet from the Sun</h3>
+
+        <ol>
+           <li>Mercury</li>
+           <li>Venus</li>
+           <li>Earth</li>
+           <li>Mars</li>
+        </ol>
+
+        <h3>Grocery List</h3>
+
+        <ul>
+            <li>Tomatoes</li>
+            <li>Eggs</li>
+            <li>Milk</li>
+            <li>Bananas</li>
+            <li>Peanuts</li>
+        </ul>
+
+        <p>Notice that both types of lists use the same tag for individual list item: "li".</p>
+
+        <p>We can also nest lists within lists, to produce sub-lists.</p>
+
+        <h3>Ordered Outline</h3>
+
+        <ol>
+            <li>
+                Chapter 3: Lists
+                <ol>
+                    <li>Ordered List</li>
+                    <li>Unordered List</li>
+                    <li>Nested Lists</li>
+                </ol>
+            </li>
+            <li>
+                Chapter 4: Links
+            </li>
+        </ol>
+
+    </body>
+</html>
