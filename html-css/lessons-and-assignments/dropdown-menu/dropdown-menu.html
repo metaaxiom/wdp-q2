@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dropdown Menu</title>
+
+        <style>
+            body {
+                margin: 0;
+            }
+            ol, ul {
+                margin: 0;
+                padding: 0;
+            }
+            .content-container {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            header {
+                border-bottom: 1px solid black;
+            }
+            header .content-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            header nav > ol > li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            header nav > ol > li:last-child {
+                margin-right: 0;
+            }
+            #logo-wrapper h1 {
+                margin: 0;
+            }
+
+            .dropdown-link {
+                display: inline-block;
+                position: relative;
+            }
+            .dropdown-link:hover ol.dropdown-menu {
+                display: block;
+            }
+            ol.dropdown-menu {
+                position: absolute;
+                border: 1px solid black;
+                padding: 10px 15px;
+                display: none;
+                background-color: #fff;
+            }
+            ol.dropdown-menu li {
+                display: block;
+                white-space: nowrap;
+                margin-bottom: 5px;
+            }
+            ol.dropdown-menu li:last-child {
+                margin-bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <div class="content-container">
+                <div id="logo-wrapper">
+                    <h1>Logo</h1>
+                </div>
+
+                <nav>
+                    <ol>
+                        <li>
+                            <a href="#">Link One</a>
+                        </li>
+                        <li>
+                            <a href="#">Link Two</a>
+                        </li>
+                        <li>
+                            <a href="#">Link Three</a>
+                        </li>
+                        <li class="dropdown-link">
+                            <a href="#">Dropdown Link</a>
+                            <ol class="dropdown-menu">
+                                <li>
+                                    <a href="#">Sublink One</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sublink Two</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sublink Three</a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a href="#">Link Five</a>
+                        </li>
+                        <li>
+                            <a href="#">Link Six</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+
+    </body>
+</html>
