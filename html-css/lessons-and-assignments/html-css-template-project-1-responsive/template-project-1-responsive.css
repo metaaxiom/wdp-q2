@@ -55,9 +55,10 @@ section h3 {
     flex-grow: 1;
 }
 #image-section-image {
-    height: 200px;
-    flex-basis: 100%;
-    background: #e1e1e1;
+    
+}
+#image-section-image img {
+    width: 100%;
 }
 #image-section-content {
     padding-left: 20px;
@@ -153,6 +154,13 @@ footer .g-container {
     }
     .blocks-section-block:last-child {
         margin-bottom: 0;
+    }
+
+    #image-section .g-container {
+        flex-direction: column;
+    }
+    #image-section-image {
+        margin-bottom: 15px;
     }
 }
 

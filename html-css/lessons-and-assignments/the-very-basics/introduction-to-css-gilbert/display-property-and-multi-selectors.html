@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS and Layout Basics</title>
+        <style>
+
+            /*
+            Display: block vs inline
+
+                block: will take up the full width of its container, regardless of whether its content actually requires that much space
+
+                inline: will only take up as much space as the content requires
+
+                inline elements can therefore be easily put side by side
+            */
+
+            p {
+                display: block; /* default */
+            }
+            span {
+                display: inline; /* default */
+            }
+
+            /* select both, span-1 and span-2 */
+            #span-1, #span-2 {
+                color: white;
+            }
+
+            #span-1 {
+                background-color: red;
+            }
+            #span-2 {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Amet ullamco anim aliquip in nulla velit incididunt. Et sunt in ea eu laborum minim culpa proident aliquip. Laborum aute do labore fugiat fugiat id veniam. Voluptate consectetur Lorem exercitation aute do magna minim reprehenderit. Proident mollit excepteur ullamco aute proident nisi ullamco anim eu. Irure commodo ad excepteur laboris aliqua sint amet ex est ut eu. Minim nostrud ex quis reprehenderit ullamco.</p>
+
+        <p>Nisi fugiat incididunt in eiusmod. Adipisicing adipisicing nulla ut in. Deserunt veniam sunt minim pariatur qui commodo ut deserunt proident labore. Laboris labore tempor id in in qui irure pariatur duis in exercitation amet. Voluptate qui enim et anim officia veniam mollit mollit aliquip ex ipsum excepteur sunt.</p>
+
+        <p>Eiusmod est ad irure minim mollit ut. Anim proident aliquip reprehenderit nisi ullamco non amet sit consequat adipisicing labore. Elit occaecat sunt reprehenderit elit sit irure. Irure ipsum proident velit esse voluptate commodo. Aute irure deserunt quis aliquip elit ad enim ullamco. In elit ut incididunt est qui officia. Culpa tempor magna ea anim reprehenderit velit qui id eiusmod eu laboris pariatur non.</p>
+
+        <p>Paragraph with few words.</p>
+
+        <span id="span-1">
+            Span 1
+        </span>
+
+        <span id="span-2">
+            Span 2
+        </span>
+
+    </body>
+</html>

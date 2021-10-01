@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS</title>
+
+    <!--
+      There are 3 MAIN ways to add CSS code in an HTML document
+
+      1. Inline CSS: quick-and-dirty way of adding CSS, which should only be used as a last resort
+
+      2. Embedded CSS: put CSS code in a "style" tag within your current HTML document.
+
+      3. Linking an external CSS stylesheet: creating a seperate file for CSS code (usually the preferred way)
+    -->
+
+    <style>
+      /*
+      There are 4 MAIN ways to select elements in CSS:
+
+      1. Since inline CSS code is applied directly on an element tag, you don't need to create a seperate CSS selector.
+
+      2. By tag name: will select every element of a particular tag type
+
+      3. By class: a grouping of elements that we create
+
+      4. By id: a unique identifier for ONE element
+      */
+
+
+      /* this selector will select every single p on the page */
+      p {
+        font-family: 'Brush Script MT';
+      }
+
+      /* this will select only the red-paragraph element, and nothing else */
+      /* ID selectors are prefaced with # */
+      #red-paragraph {
+        /* CSS properties go here */
+        color: red;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      /* a dot prefacing a selector means class */
+      .green-paragraph {
+        color: green;
+      }
+
+      #my-img {
+        width: 450px;
+        height: 250px;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <p id="red-paragraph">This is a paragraph.</p>
+
+    <p class="green-paragraph">This is a second paragraph.</p>
+
+    <p class="green-paragraph">This is a third paragraph.</p>
+
+  </body>
+</html>
