@@ -18,7 +18,41 @@ VARIABLES
 
     Variables can store not just numbers, but all kinds of "data types":
 
+    (Primitive)
+
     1. number: stores integers or decimals
+    
+    2. strings: text, strings of characters
+        either single quote, or double-quote
+    
+    3. boolean: either true or false
+    
+    4. undefined: when you don't assign a value to something, or JS fails to understand a particular operation
+    
+    5. null: means nothing, placeholder value, which you only get when you specifically assign it yourself (you won't get this value organically)
+
+    6. NaN: short for "Not a Number"
+        You get this value when you perform a math operation that doesn't make sense
+
+    7: Infinity: can positive or negative
+
+    (Collections)
+
+    8. Arrays (index-value pairs, order matters)
+        0 "Adam"
+        1 "Adrien"
+        2 "John"
+        3 "Arthur"
+        .
+        .
+        .
+        n "Tom"
+    
+    9. Objects (key-value pairs, order doesn't matter)
+        'make': 'Ford'
+        'model': 'Fiesta'
+        'year': '2012'
+
 
     In programming, it's crucial that variable names are DESCRIPTIVE
 */
@@ -27,7 +61,8 @@ VARIABLES
 /*
 the "let" keyword tells JS that we're creating a variable
 
-variable name is descriptive and written in "camel-case" (just a convention)
+variable names should be descriptive (but also brief)
+they're usually written in "camel-case" (just a convention)
     first letter of first word is lower-case, 
     but first letters of all succeeding words are uppercase
 
@@ -36,8 +71,70 @@ variable names is JS are CASE-SENSITIVE
 
 the single equals ("=") is called the "assignment operator" b/c it
 assigns a value to a variable
+
+There are statement and there are blocks of code:
+    Statement: single operation, usually single line
+        Typically need a semi-colon at the end
+    
+    Block: set of operations, usually multi-line
+        Typically do not need a semi-colon at the end
 */
+
+// declaring: specifying that some variable exists, without giving it a value
+let myVar;
+console.log(myVar); // value: undefined
+
+// defining: setting a value to a variable
+myVar = 10;
+console.log(myVar);
+
+// initialization: declaring and defining a variable at the same time
 let numOfApples = 8;
 let priceOfSingleApple = 0.49;
+let theTotalCostOfClothesThatIBoughtLastThursday = 29.99;
 
 console.log('The total of', numOfApples, 'apples is: $', priceOfSingleApple * numOfApples);
+
+let myName = 'Julian';
+let myName2 = "Julian";
+
+let someText = 'skdghgsh JGFHG 65756....,,,@^%$#&%^$*&(   ';
+let someText2 = '  ';
+
+// escape quotes using forward-slash
+// (when using the same type of quotes)
+let textWithQuote = 'She said, \'Run Forrest, Run!\'';
+// mix quotes 
+// (single on the outside, double on the inside)
+// (double on the outside, single on the inside)
+let textWithQuote2 = 'She said, "Run Forrest, Run!"';
+let textWithQuote3 = "She said, 'Run Forrest, Run!'";
+
+console.log(textWithQuote);
+console.log(textWithQuote2);
+console.log(textWithQuote3);
+
+// the number 5, as a number
+let numAsNum = 5;
+// the number 5, as a string
+let numAsStr = '5';
+
+console.log('Number Type:', numAsNum);
+console.log('String Type:', numAsStr);
+
+let ofVotingAge = true;
+let ofVotingAge2 = false;
+console.log('Is Sam of voting age?', ofVotingAge);
+console.log('Is Adam of voting age?', ofVotingAge2);
+
+let placeholderVal = null;
+console.log(placeholderVal);
+
+console.log(100 / 0); // Infinity
+console.log(0 / 0); // NaN
+
+
+/*
+Skim 1.1 - 1.4
+Read 2.1, 2.2, 2.3, 2.5
+*/
