@@ -138,3 +138,23 @@ console.log(0 / 0); // NaN
 Skim 1.1 - 1.4
 Read 2.1, 2.2, 2.3, 2.5
 */
+
+console.log('Infinity divided by Infinity', Infinity / Infinity);
+
+let willChangeValue = 1;
+console.log('original willChangeValue:', willChangeValue);
+// no need to use let keyword when using variable that has already been declared
+willChangeValue = 2;
+console.log('final willChangeValue:', willChangeValue);
+
+const wontChange = 3;
+console.log('wontChange:', wontChange);
+// can't change the value of a constant
+// wontChange = 4;
+
+// JS stores common mathematical values, constants, functions, etc. in the Math object
+console.log(Math.PI);
+
+// whatever value the user writes will be stored in answer variable
+let answer = prompt('What is your name?');
+alert('The name of the user is ' + answer);

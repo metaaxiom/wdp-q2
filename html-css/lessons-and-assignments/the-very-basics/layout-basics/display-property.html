@@ -2,8 +2,174 @@
 <html lang="en">
     <head>
         <title>CSS Display Property</title>
+        <style>
+            /*
+            display property values:
+                block (full width)
+
+                inline (like text, only occupies as much space as it needs, and does not respect vertical margins or height)
+
+                inline-block (like text, but still allows us to set margins on all 4 sides and the height as well)
+            */
+
+            /* #test-div {
+                background: red;
+                display: inline-block;
+                margin: 10px;
+            }
+
+            #test-div-2 {
+                background: blue;
+                display: inline-block;
+                margin: 10px;
+            }
+
+            #test-div-3 {
+                display: inline-block;
+                background: green;
+                margin: 10px;
+            }
+            
+            #test-div-4 {
+                display: inline-block;
+                background: orange;
+                margin: 10px;
+            } */
+
+            body {
+                margin: 0;
+            }
+
+            header {
+                background-color: lightskyblue;
+                /* vertical horizontal */
+                padding: 10px 20px;
+            }
+
+            #logo {
+                /* margin: top right bottom left; */
+                margin: 0 30px 0 0;
+            }
+            /* will apply styling to two elements */
+            #logo, header nav {
+                display: inline-block;
+            }
+
+            header nav ol {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            header nav li {
+                display: inline-block;
+                margin-right: 15px;
+            }
+            /* pseudo-class will only select the last li */
+            header nav li:last-child {
+                margin-right: 0;
+            }
+
+            main {
+                display: inline-block;
+                padding: 0 20px;
+                width: 70%;
+            }
+            main section {
+                border-bottom: 1px solid lightgray;
+            }
+
+            aside {
+                display: inline-block;
+                width: 20%;
+                /* vertical-align is a property that you only really need to worry about using when you're aligning elements side-by-side */
+                vertical-align: top;
+            }
+
+            footer {
+                background-color: lemonchiffon;
+                padding: 10px 20px;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
+        <header>
+            <h1 id="logo">Logo</h1>
+            <!-- NAVIGATIONAL MENU -->
+            <nav>
+                <ol>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ol>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT AREA -->
+        <main>
+            <h1>Main Page Title</h1>
+            <p>Incididunt reprehenderit ea esse sint voluptate cupidatat deserunt consequat laborum id amet officia elit. Fugiat esse cupidatat in consectetur ullamco nisi sint in dolore do. Qui velit ea in ad nostrud sint cillum fugiat consequat.</p>
+
+            <section>
+                <h2>Topic 1</h2>
+                <p>In eu et non sit dolore quis cillum reprehenderit. Exercitation aliqua tempor elit non deserunt et commodo veniam do adipisicing nisi. Cillum velit adipisicing laboris exercitation. Pariatur consequat magna amet qui eu commodo tempor do. Commodo quis aliqua consequat ullamco quis quis nulla.</p>
+            </section>
+
+            <section>
+                <h2>Topic 2</h2>
+                <p>Laboris proident Lorem mollit magna velit aliqua. Veniam cillum in adipisicing laborum irure exercitation cillum. Veniam magna velit ipsum velit labore magna ex proident do.</p>
+            </section>
+
+            <section>
+                <h2>Topic 3</h2>
+                <p>Eu eiusmod excepteur eu reprehenderit sint ex quis occaecat consequat cupidatat reprehenderit adipisicing. Veniam ut velit nulla quis qui fugiat nulla duis laboris enim ad minim irure consequat. Lorem ut occaecat duis laboris eiusmod qui exercitation et ipsum ad Lorem id ea Lorem. Labore elit eiusmod aliqua labore irure ipsum sit dolor tempor dolore ipsum enim fugiat. Nisi aliqua magna tempor deserunt in duis sit pariatur consectetur. Occaecat qui ad laboris nostrud irure sunt id do do adipisicing ad cillum officia.</p>
+            </section>
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside>
+            <h3>Sidebar</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </aside>
+
+        <footer>
+            Copyright &copy; 2021
+        </footer>
+
+        <!--
+        <div id="test-div">
+            Test Div sjhfkhkjhgjkhg
+        </div>
+
+        <div id="test-div-2">
+            Test Div 2 gkhjgjkhgjkghjhgjkhgjhgjhg
+        </div>
+
+        <div id="test-div-3">
+            Test Div 3 hghgfhgfhgfhgfghfhf
+        </div>
         
+        <div id="test-div-4">
+            Test Div 4 hghgfhgfhgfhgfghfhf hghjgfhjgfhgfhgfghf bgjkhgjkhg gfdgfdgfdgfdgfdgfd jkhkjhjklhlhjjkh
+        </div>
+        -->
+
     </body>
 </html>
