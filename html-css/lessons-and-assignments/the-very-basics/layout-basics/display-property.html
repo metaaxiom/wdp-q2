@@ -12,30 +12,6 @@
                 inline-block (like text, but still allows us to set margins on all 4 sides and the height as well)
             */
 
-            /* #test-div {
-                background: red;
-                display: inline-block;
-                margin: 10px;
-            }
-
-            #test-div-2 {
-                background: blue;
-                display: inline-block;
-                margin: 10px;
-            }
-
-            #test-div-3 {
-                display: inline-block;
-                background: green;
-                margin: 10px;
-            }
-            
-            #test-div-4 {
-                display: inline-block;
-                background: orange;
-                margin: 10px;
-            } */
-
             body {
                 margin: 0;
             }
@@ -73,16 +49,27 @@
                 display: inline-block;
                 padding: 0 20px;
                 width: 70%;
+                box-sizing: border-box;
+                margin-right: -4px;
             }
             main section {
                 border-bottom: 1px solid lightgray;
             }
 
+            #topic-2-img {
+                float: left;
+                padding: 0 10px 2px 0;
+            }
+            #clear-topic-2 {
+                clear: both;
+            }
+
             aside {
                 display: inline-block;
-                width: 20%;
+                width: 30%;
                 /* vertical-align is a property that you only really need to worry about using when you're aligning elements side-by-side */
                 vertical-align: top;
+                box-sizing: border-box;
             }
 
             footer {
@@ -129,7 +116,15 @@
 
             <section>
                 <h2>Topic 2</h2>
+                <img id="topic-2-img" src="image1.jpg" alt="meadow">
                 <p>Laboris proident Lorem mollit magna velit aliqua. Veniam cillum in adipisicing laborum irure exercitation cillum. Veniam magna velit ipsum velit labore magna ex proident do.</p>
+                <p>Pariatur occaecat ipsum ut cillum. Anim pariatur dolor reprehenderit Lorem labore nulla cillum aliqua. Ullamco ullamco sint fugiat fugiat ex eiusmod anim. Ex quis nostrud voluptate esse laboris exercitation. Irure qui elit commodo laboris. Exercitation nisi do consectetur proident labore incididunt id. In minim sint eiusmod in in ipsum esse eu laborum veniam sint eu laborum esse.</p>
+                <p>Officia eiusmod occaecat ut aute in Lorem irure exercitation sunt ullamco magna enim deserunt ullamco. Proident elit anim proident est magna dolore officia ipsum nulla voluptate deserunt ad amet. Voluptate minim in sunt veniam veniam ullamco cillum fugiat excepteur officia mollit proident. Esse dolor velit adipisicing magna veniam incididunt mollit sit excepteur do sint duis magna ex. Laboris cillum sint qui sunt ullamco consequat consectetur sunt mollit elit labore ex.</p>
+                <p>Occaecat culpa sint ex proident commodo minim et. Laborum irure Lorem labore deserunt culpa incididunt minim pariatur nisi excepteur ut. Excepteur esse quis cillum aliqua proident ad esse nisi. Excepteur cupidatat ex fugiat id do. Aliquip do aliquip Lorem sunt cupidatat excepteur id magna tempor tempor anim incididunt irure. Nisi ex quis officia eu. Ad id dolore laboris non ad eiusmod nisi sit.</p>
+                <p>Adipisicing duis et ipsum Lorem ea in minim. Duis sit sint aliquip ex. Eiusmod nisi proident non ad in.</p>
+                <p>Id reprehenderit incididunt fugiat adipisicing in sunt occaecat. Veniam consectetur eu esse magna reprehenderit id in. Anim velit pariatur duis Lorem commodo mollit sunt minim eiusmod do aute. Mollit non culpa tempor aute deserunt magna reprehenderit ipsum culpa sit in. Lorem ipsum adipisicing adipisicing qui cillum sit. Commodo minim labore tempor sunt qui laboris officia id.</p>
+
+                <div id="clear-topic-2"></div>
             </section>
 
             <section>
@@ -152,24 +147,6 @@
         <footer>
             Copyright &copy; 2021
         </footer>
-
-        <!--
-        <div id="test-div">
-            Test Div sjhfkhkjhgjkhg
-        </div>
-
-        <div id="test-div-2">
-            Test Div 2 gkhjgjkhgjkghjhgjkhgjhgjhg
-        </div>
-
-        <div id="test-div-3">
-            Test Div 3 hghgfhgfhgfhgfghfhf
-        </div>
-        
-        <div id="test-div-4">
-            Test Div 4 hghgfhgfhgfhgfghfhf hghjgfhjgfhgfhgfghf bgjkhgjkhg gfdgfdgfdgfdgfdgfd jkhkjhjklhlhjjkh
-        </div>
-        -->
 
     </body>
 </html>
