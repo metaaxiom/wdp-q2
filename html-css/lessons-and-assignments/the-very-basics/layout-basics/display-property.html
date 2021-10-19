@@ -60,9 +60,17 @@
                 float: left;
                 padding: 0 10px 2px 0;
             }
-            #clear-topic-2 {
+            /* #clear-topic-2 {
+                clear: both;
+            } */
+
+            /* select region AFTER topic-2-section */
+            #topic-2-section::after {
+                display: block;
+                content: '';
                 clear: both;
             }
+
 
             aside {
                 display: inline-block;
@@ -114,7 +122,7 @@
                 <p>In eu et non sit dolore quis cillum reprehenderit. Exercitation aliqua tempor elit non deserunt et commodo veniam do adipisicing nisi. Cillum velit adipisicing laboris exercitation. Pariatur consequat magna amet qui eu commodo tempor do. Commodo quis aliqua consequat ullamco quis quis nulla.</p>
             </section>
 
-            <section>
+            <section id="topic-2-section">
                 <h2>Topic 2</h2>
                 <img id="topic-2-img" src="image1.jpg" alt="meadow">
                 <p>Laboris proident Lorem mollit magna velit aliqua. Veniam cillum in adipisicing laborum irure exercitation cillum. Veniam magna velit ipsum velit labore magna ex proident do.</p>
@@ -124,7 +132,8 @@
                 <p>Adipisicing duis et ipsum Lorem ea in minim. Duis sit sint aliquip ex. Eiusmod nisi proident non ad in.</p>
                 <p>Id reprehenderit incididunt fugiat adipisicing in sunt occaecat. Veniam consectetur eu esse magna reprehenderit id in. Anim velit pariatur duis Lorem commodo mollit sunt minim eiusmod do aute. Mollit non culpa tempor aute deserunt magna reprehenderit ipsum culpa sit in. Lorem ipsum adipisicing adipisicing qui cillum sit. Commodo minim labore tempor sunt qui laboris officia id.</p>
 
-                <div id="clear-topic-2"></div>
+                <!-- CLEARFIX -->
+                <!--<div id="clear-topic-2"></div>-->
             </section>
 
             <section>

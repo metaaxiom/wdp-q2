@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Type Conversion</title>
+</head>
+<body>
+    <script>
+    
+    /*
+    JS will sometimes convert between data types for us, behind the scenes,
+    without us being alerted of the fact ("type coercion"), but we can
+    also convert between data types manually
+    */
+
+    // remember that we can use front flash (\) to escape characters
+        // quotes within quotes have to be escaped (unless you use 
+        // quotes of a different style: ', "", ``)
+    console.log('typeof 5', typeof 5); // number
+    console.log('typeof 12.33', typeof 12.33); // number
+    console.log('typeof \'5\'', typeof '5'); // string
+    console.log('typeof true', typeof true); // boolean
+    console.log('typeof false', typeof false); // boolean
+    console.log('typeof \'true\'', typeof 'true'); // string
+
+    /*
+    We can manually convert from string to number with functions:
+        Number(): will respect decimal places
+        parseInt(): will ignore decimal places
+        parseFloat(): will respect decimal places
+
+    Generally, parseInt() and parseFloat() are preferable methods
+    of conversion, since they were specifially made for that purpose,
+    and it is their only purpose. Number() actually serves another
+    purpose (not related to conversion). Its ability to convert
+    strings to numbers is a secondary effect.
+
+    So, for this course, we'll primarily use parseInt() and parseFloat()
+    */
+
+    let convertedToNum = Number('100'); // '100' -> 100
+    console.log( 'Number(\'100\')', convertedToNum );
+    // now that convertedToNum is of data type number, we can
+    // perform mathematical operations on it (like addition)
+    console.log( 'convertedToNum + 1', convertedToNum + 1 ); // 101
+
+    // we don't have to create a seperate variable,
+    // we can execute Number() directly inside the 
+    // console.log function (a function within a function)
+    // Number() will also convert decimal numbers
+    console.log( 'Number(\'22.5\')', Number('22.5') ); // 22.5
+
+    // parseInt() ignores decimals
+    console.log( 'parseInt(\'22.5\')', parseInt('22.5') ); // 22
+
+    // parseFloat() respects decimals
+    console.log( 'parseFloat(\'22.5\')', parseFloat('22.5') ); // 22.5
+
+    
+    // unlike Number(), parseInt() and parseFloat() will both
+    // convert numbers even if they have trailing text
+    console.log('Number(\'5tsp\')', Number('5tsp')); // NaN, Number() doesn't know what to do with 'tsp'
+    console.log('parseInt(\'5tsp\')', parseInt('5tsp')); // 5, 'tsp' gets removed
+
+    /*
+    prompt captures input through a textbox, so all of its
+    input will be of string data type
+    */
+    let userAge = prompt('Please enter your age.');
+    console.log(`userAge: ${userAge}`);
+    console.log(`typeof userAge: ${typeof userAge}`);
+    console.log(`userAge converted to num below:`);
+    console.log(parseInt(userAge)); // number data type
+
+
+    // we can also convert to booleans
+    console.log( 'Boolean(\'true\')', Boolean('true') ); // 'true' -> true (string to boolean)
+
+    /*
+    Even though only boolean values can be literally true or false, 
+    virtually all values in JS can be placed somewhere on the axis of
+    TRUTHY and FALSY:
+        A string with characters: truthy
+        An empty string (nothing between equotes): falsy
+
+        0: falsy
+        5: truthy
+    */
+
+    </script>
+</body>
+</html>

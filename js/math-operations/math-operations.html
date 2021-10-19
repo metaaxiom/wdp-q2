@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mathematical Operations</title>
+</head>
+<body>
+    <script>
+    
+    // addition
+    console.log(5 + 5);
+    // substraction
+    console.log(5 - 5);
+    // multiplication
+    console.log(5 * 5);
+    // division
+    console.log(5 / 5);
+
+    /*
+    COMPARISONS
+    
+    You can think of less than (<), greater than (>), and equal to (==)
+    operators as questions: "is x greater than y?"; the answer will either be
+    yes (boolean true) or no (boolean false)
+
+        NOTE: the equality operator is a DOUBLE equal sign; we use the singular
+        equals (assignment operator) for assigning values to variables. Be
+        careful to not mix them up!
+    */
+
+    console.log(10 > 5); // is 10 greater than 5? true
+    console.log(10 < 5); // is 10 less than 5? false
+    console.log(5 > 5); // is 5 greater than 5? false, b/c they're exactly equal
+    
+    // equality comparison with double equals (==)
+    console.log(5 == 5); // is 5 equal to 5? true
+    console.log(5 == 4); // is 5 equal to 4? false
+
+    // you can combine less than / greater than with the equality operator
+    console.log(5 >= 5); // is 5 greater than OR equal to 5? true (ONLY ONE PART HAS TO BE TRUE)
+    console.log(5 <= 5); // is 5 less than or equal to 5? true
+
+    /*
+    There's also the triple equals (===) which behaves like the double equals
+    except that it also considers the type. Double equals will equate two
+    values of different types if it can make a simple type coercion (5 == '5');
+    triple equals will not equate values, unless EVERYTHING about them is the same
+    (we say that it is "data type sensitive").
+    */
+    
+    // DOUBLE EQUALS
+    console.log(5 == '5'); // true
+    console.log(1 == true); // true
+    console.log(0 == true); // true
+
+    // TRIPLE EQUALS
+    console.log(5 === '5'); // false
+    console.log(1 === true); // false
+
+
+    /*
+    We need to understand the difference between operand and operator:
+        OPERATOR is the symbol performing a functionality (like adding, concatenating, etc.)
+        OPERAND is the value that the operator is acting upon (like a string, number, etc.)
+
+    We can group operators into a few categories:
+        Unary operators require only one operand
+            Example 1: x++
+            Example 2: x-
+        Binary operators require two operands
+            Example: x + y
+    */
+    
+    // UNARY OPERATOR
+    let x = 5;
+    x++; // will increment x by one, AFTER this line
+    console.log(x); // 5, increment only takes effect here
+
+    let y = 3;
+    y--; // will decrement y by one, AFTER this line
+    console.log(y); // 2, decrement only takes effect here
+
+    // ++ in front increments IMMEDIATELY, whereas ++ in back increments only on NEXT line
+    console.log(++y); // 3
+
+    // BINARY operator b/c it requires TWO operands (x and y)
+    console.log(x + y);
+
+    
+
+    /*
+    There are also ternary / trinary / tertiary (different words for the same thing) 
+    operators. An example of one is the conditional operator: 
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+    */
+
+    </script>
+</body>
+</html>

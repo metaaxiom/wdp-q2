@@ -73,7 +73,7 @@ without us directly seeing it.
 */
 
 /*
-Here wer have a number data being concatenated to a string
+Here we have a number data being concatenated to a string
 It makes sense to add two numbers together (producing a sum), and 
 it makes sense to add two string together (merging multiple string into one),
 but it does NOT make sense to add a string and a number. So, in this example
@@ -83,6 +83,7 @@ add the two "strings" will be simple.
 let myGrade = 98;
 // data type coercion
 console.log('My final grade is ' + myGrade); // My final grade is 98
+
 
 /*
 WARNING: always pay attention to data types, keeping in mind that numbers can be
