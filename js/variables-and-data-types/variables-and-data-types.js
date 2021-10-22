@@ -158,3 +158,19 @@ console.log(Math.PI);
 // whatever value the user writes will be stored in answer variable
 let answer = prompt('What is your name?');
 alert('The name of the user is ' + answer);
+
+/*
+Constants declared using "const" as opposed to "let"
+cannot be changed, as normal variables can.
+
+Constant are often used to store mathematical constant (such as PI), but
+they're useful for any values which will not change through the duration
+of the program
+
+Constant are often written with all uppercase letters
+to differentiate them from normal variables
+*/
+const SPEED_OF_LIGHT = 299792458;
+// the below line will throw an error, since you can't change the value of a constant
+// speedOfLight = 100000;
+console.log(SPEED_OF_LIGHT);
