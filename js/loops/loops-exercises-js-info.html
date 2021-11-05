@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>2.13: Loops Exercises - javascript.info</title>
+</head>
+<body>
+    <script>
+    
+    /* 2.13 */
+
+    /* Last loop value */
+    let i = 3;
+    while(i){
+        /*
+        two operations here:
+            1. alert
+            2. decrement i
+        */
+        console.log('loop 1:', i-- );
+    }
+    /*
+    What is the last value alerted by this code? Why?
+
+    1, because the while loop will stop when i decreases to 0
+    (since 0 is a falsy value)
+    */
+
+    /* Which values does the while loop show? */
+    let j = 0;
+    while (++j < 5) console.log('loop 2:', j );
+
+    /*
+    Iterations:
+        1. 1 < 5
+        2. 2 < 5
+        3. 3 < 5
+        4. 4 < 5
+        5. 5 < 5 - FALSE, stop loop
+    */
+
+    let k = 0;
+    while (k++ < 5) console.log('loop 3:', k );
+
+
+    /* Output even numbers in the loop */
+    // for(let x = 0; x % 2 == 0; x=x+2){
+    //     console.log('loop 4:', x);
+    //     if(x == 10){
+    //         break;
+    //     }
+    // }
+
+    for(let x = 0; x <= 10; x=x+2){
+        console.log(x);
+    }
+
+    </script>
+</body>
+</html>

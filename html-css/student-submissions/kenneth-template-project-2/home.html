@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Project 2 Website </title> 
+    <script src="https://kit.fontawesome.com/5bd696e407.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3867f5a45b.js" crossorigin="anonymous"></script>
+<style>
+    body {
+        margin: 0;
+    }  
+    
+    
+      
+    main nav {
+        display: flex;
+        align-content: center;
+
+    }
+
+    main .generic-contain.nav.col-12
+    }
+       
+    main nav ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    
+    } 
+            
+    
+    main nav li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    main nav li img {
+        margin-right: 40px;
+    }
+
+    nav.col-12{
+      justify-content: center;
+
+
+    }
+        
+    nav.col-12 h2 li {
+        text-decoration-color: #fff;               
+        color: #fff;
+        padding-right: 10px;
+    
+    }
+          
+       
+    #header.inner.row.generic-container {
+        height: 0px;
+    }
+
+    #hero {
+        text-align: center;
+        height: 1400px;
+        background-image: url("./images/header-splash-bg.png"); 
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    #hero .generic-container {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+        
+     #hero .generic-container img {    
+         margin-right: 40px;
+          
+          
+
+    }
+    #hero h1 {
+        margin: 0;
+        color: #fff;
+        top: 25%;
+        width: 50%;
+        text-align: center;
+        background: none;
+        width: 1830px;
+        
+    }
+    #hero h3 {
+        margin: 0;
+        color: #fff;
+        top: 25%;
+        width: 50%;
+        text-align: center;
+        background: none;
+        width: 1840px;      
+        
+    }        
+               
+
+    .generic-container {
+        width:100%;
+        max-width: 980px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        font-size: 16px;
+        align-content: center;
+
+        
+    } 
+    .info {
+        display: flex; 
+        flex-direction: column;       
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        margin-top: 150px;
+
+    }
+    .info .icons {
+        display: flex;
+        font-size: 36px;
+        color: white;
+        margin-top: 600px;
+        
+    }
+    .info .icons .fa-twitter {
+        margin-right: 20px;
+    }
+    .info .icons .fa-flickr{
+        margin-right: 20px;
+    }
+     #section_1 {
+        background-color: #f5f6f7;    
+               
+    }
+    .row {
+        display: flex;
+        height: 400px;      
+           
+    }
+    .row h3 {
+        color:#169f85
+    }
+    
+    .myButton {
+        box-shadow: 0px 6px 14px -7px #3e7327;
+	    background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+        background-color:#169f85;
+        border-radius:2px;
+        border:1px solid #169f85;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:13px;
+        font-weight:bold;
+        padding:8px 48px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #5b8a3c;
+        align-content: center;
+        
+    
+        }
+        .myButton {
+        box-shadow: 0px 10px 14px -7px #3e7327;
+        background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+        background-color:#169f85;
+        border-radius:4px;
+        border:1px solid #169f85;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:17px;
+        font-weight:bold;
+        padding:11px 55px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #5b8a3c;
+}
+
+         
+    .col-12 { 
+        flex-basis: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-content: center;
+    }
+    .col-8 {
+        flex-basis: 66.66% ;
+        box-sizing: border-box;
+        align-content: right;
+        height: 150px;
+        font-size:18px;
+        
+    }
+    .col-6 {    
+        flex-basis: 50%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col-4 {
+        flex-basis: 33.33%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        
+    }
+    .col-3 {
+        flex-basis: 25%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col-2 {
+        flex-basis: 16.66%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #section_2 div.row.generic-container {
+        display: flex;
+        align-items: flex-end;
+        height: 500px;
+        text-justify: center;
+    }    
+
+    #section_2 p {
+        text-align: left;
+
+    }
+    #section_2 div.row.generic-container h2 {
+        color:#77b55a;
+    } 
+    .DESIGN {
+        box-shadow:inset 0px 1px 0px 0px #9acc85;
+        background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+        background-color:#74ad5a;
+        border:1px solid #3b6e22;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:17px;
+        font-weight:bold;
+        padding:12px 55px;
+        text-decoration:none;
+    }          
+    #middle-container  {
+        position: relative;
+        display: flex;
+        background-color: #f5f6f7;
+        padding-left: 1390px;
+        padding-top: 60px;
+        
+    }
+    #middle-container.col-12_middle {
+    
+        display: inline-block;
+        margin-right: 200px;
+        width: 200px;
+        
+    
+    }    
+        
+    
+    #section_3 {
+    position: relative;
+    display: flex;
+    background-color: #f5f6f7;
+    height: 400px;
+    align-content: center;
+    padding-top: 0px;
+    align-items: center;
+    
+   }
+   #section_3 .div.row.col-4 {
+    position: relative;
+    align-content: center;
+        
+   }
+
+   #section_3 h3 {
+       color: black;
+   }
+   #section_3.p {
+    text-align: center;
+   }
+   .img {
+    align-content: center;
+    padding-left: 20px;
+   }
+   #section_3.col-4_1.img {
+       padding-left: 60px;
+   }
+   
+   #section_4 {
+    display: flex;
+    text-align: center;
+    height: 1400px;
+    background-image: url("./images/newsletter-bg.png"); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    align-content: center;
+    align-items: center;
+   }
+   #section_4.generic-container {
+    align-items: center;
+    height: 100%;
+    align-content: center
+   } 
+   #section_4 h1 {
+    color: #fff;
+    margin-bottom: 10px;
+    
+   }
+   #email-box {
+            padding: 10px 12px;
+            font-size: 18px;
+            
+            border: 1px solid #ccc;
+            border-right: none;
+            
+    }
+    #email-submit {
+            font-size: 18px;
+            padding: 10px 16px;
+            cursor: pointer;
+            
+            border: 1px solid #ccc;
+            border-left: none;
+            background-color: rgb(0, 146, 78);
+            color: white;
+            margin-left: -4px;
+    }
+   
+   
+    
+       
+
+   
+   
+ 
+
+    #section_5 {
+        width: 100;
+        background-color: #ced0d2;
+        height: 460px;
+        align-items: center;
+    }
+    #section_5 .generic-container {
+        text-align: center;
+        height: 200px;
+        padding-top: 75px;
+    }
+    #section_5 .generic-container  h1 {
+        padding: 50px;
+        padding-bottom: 20px;
+        margin: 0;
+    }       
+
+    #section_5 .generic-container  h1{
+        padding: 0px;
+    }
+    .container-1{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        height: 60px;
+        align-items: center;
+        
+    }
+    .box-1{
+       border:1px solid #1abc9c;
+       width: 200px;
+       margin-right: none;
+       background-color: #1abc9c;
+       
+       
+    }   
+    .container-1 h3 {
+        justify-content: center;
+        color: #fff;
+    }
+    .button {
+        display: flex;
+        height: 50px;
+        margin-right: 20px;
+        padding: 0;
+        background: #009578;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        overflow: hidden;
+        font-family: "Quicksand", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background: #008168;
+    }
+
+    .button:active {
+         background: #006e58;
+    }
+
+        .button__text,
+        .button__icon {
+        display: inline-flex;
+        align-items: center;
+        padding: 0 24px;
+        color: #fff;
+        height: 100%;
+    }
+
+    .button__icon {
+        font-size: 1.5em;
+        background: rgba(0, 0, 0, 0.08);
+    }
+
+        
+       
+
+    } 
+    .android-icon {
+        font-size: 30px;
+        color: white;
+        width: 60px;
+        height: 61.44px;
+        background-color: #16a085;
+        color: white;
+        margin-left: none;
+        text-align: center;
+        margin-right: 20px;
+
+    }
+    i.fab.fa-android {
+        align-items: center;
+        padding-top: 10px;  
+    }
+    
+
+              
+    .box-2{
+        border:1px solid #1abc9c;
+        width: 200px;
+        background-color: #1abc9c;
+    }
+    
+    .container-2 {
+        display: flex;
+        height: 100px;
+        
+    }
+    .box-first {
+        margin-left: 50px;
+        justify-content: left;
+        margin-right: 1400px;
+
+    }
+    .box-last {
+        margin-right: 50px;
+        padding-top: 30px;
+
+    }
+</style>
+</head>           
+<body>
+    <main>
+        <div id="hero"> 
+          <div class="generic-container">    
+            <nav class="col-12">
+             <h2>
+                <ol>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PHOTOAPP</a></li>
+                    <img  id="img" src="images/logo.png"  alt="An image of food presentation" title="Food of the Spice Rack"/>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">DOWNLOAD</a></li>
+                </ol>    
+             </h2>
+            </nav>  
+           
+            <div class="info">
+                <h1>YOUR LIFE, A PHOTO</h1>
+                   <h3>print your life in a simple photo</h3>
+                   <br>
+                   <br>
+                   <a href="#" class="myButton">Getting Started</a>
+                   
+                   <div class="icons">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-flickr"></i>
+                    <i class="fas fa-basketball-ball"></i>                    
+                   </div>
+            </div>
+                   
+        </div>  
+                 
+        
+        </div>  
+
+      <section id=section_1>
+            <div class="row generic-container">
+                <div class="col-8">
+                    <h3><b>Rappresent your life with a <br>
+                        simple photo</b></h3>
+                    <p>Adipisicing do ut dolore incididunt nostrud nisi ullamco proident non irure. Excepteur excepteur exercitation deserunt laboris cillum     aliqua commodo anim sint consectetur. Excepteur minim tempor elit non.<br><br><a href="#" class="myButton">Getting Started</a>
+                    </p>
+                </div>  
+                <div class="col-4"><img src="images/hand-with-iphone2.png"  alt="An image of food presentation" title="Food of the Spice Rack" /></div>    
+                 
+            </div>
+        </section>
+        <section id=section_2>
+            <div class="row generic-container">
+              <div class="col-6"><img src="images/iphone-5c-flat2.png"  alt="An image of food presentation" title="Food of the Spice Rack" />
+              </div>    
+                <div class="col-6">
+                    <h2><b>DESIGN</b></h2>
+                    <p>Adipisicing do ut dolore incididunt nostrud nisi ullamco proident non irure. Excepteur excepteur exercitation deserunt laboris cillum aliqua commodo anim sint consectetur. Excepteur minim tempor elit non.Adipisicing do ut dolore incididunt nostrud nisi ullamco proident non irure. Excepteur excepteur exercitation deserunt laboris cillum aliqua commodo anim sint consectetur. Excepteur minim tempor elit non.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="#" class="DESIGN">LEARN MORE</a>
+                    <br>
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <b><font size="+1">01/05</font></b>
+                    <br>                    
+                    <i class="fas fa-angle-left fa-2x"></i>&nbsp;&nbsp;
+                    <i class="fas fa-angle-right fa-2x"></i>
+                    <br>
+                    <br>
+                    <br>
+                    <br>                  
+                                       
+                </div>                 
+            </div>
+        </section> 
+        <div id="middle-container">
+            <div class="col-12_middle">
+             <i class="fas fa-angle-left fa-2x"></i>&nbsp;&nbsp;
+             <i class="fas fa-angle-right fa-2x"></i>
+            </div>  
+        </div>
+        <section id=section_3>
+            
+            <div class="row generic-container">
+                <div class="col-4_1"><img src="images/logo-green.png"  alt="An image of food presentation" title="Food of     the Spice Rack" />
+                    <br>
+                    <br>
+                    <h3>OUR COMMUNITY</h3>                   
+                    <p><font size="3">Adipisicing do ut dolore incididunt nostrud nisi ullamco ncididunt nostrud nisi ullamco </font>
+                </div>
+                <div class="col-4"><img src="images/example-pic-1.png"  alt="An image of food presentation" title="Food of   the Spice Rack"/>
+                </div>   
+                <div class="col-4"><img src="images/example-pic-2.png"  alt="An image of food presentation" title="Food of the Spice Rack"/>
+                </div>                       
+            </div>                 
+        </section>
+    
+        <section id=section_4> 
+            <div class="generic-container"> 
+                <h1>SUBSCRIBE TO US COMMUNITY</h1>
+                <form action="">
+                    <input id="email-box" type="email">
+                    <button id="email-submit">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </form>                           
+            </div>
+            
+                                                       
+        </section>
+        <section id=section_5>
+            <div class="generic-container">
+                <h1>DOWNLOAD IT</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
+            <div class="container-1">
+                <button type="button" class="button">
+                    <span class="button__text">APPLE STORE</span>
+                    <span class="button__icon">
+                        <i class="fab fa-apple"></i>
+                    </span>
+                  </button>
+                  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+                                      
+                <button type="button" class="button">
+                    <span class="button__text">PLAY STORE</span>
+                    <span class="button__icon">
+                        <i class="fab fa-android"></i>
+                    </span>
+                </button>
+                <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+            </div>                            
+        </section>
+        <footer class="container-2">
+            <div class="box-first">
+                <h5>CREDIT | PRIVACY | OUR TEAM</h5>
+                <p><b>Copyright by phototime - all rights reserved</b></p> 
+            </div>          
+            <div class="box-last">
+                <img src="images/logo-green.png"  alt="An image of food presentation" title="Food of the Spice Rack" />
+            </div>              
+                                      
+        </footer>                
+    
+                                 
+           
+         
+        
+    </main>
+</body>
+</html>

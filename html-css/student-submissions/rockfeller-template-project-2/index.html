@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 2 Template</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/310e43fa1f.js" crossorigin="anonymous"></script>
+
+    <style>
+      .iphone-img{
+        background-position-x: 200%;
+      }
+      /*
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Parisienne', cursive;
+      */
+      body {
+        
+          margin: 0 auto;
+          font-family: 'Montserrat', sans-serif;
+          
+          
+      }
+
+
+
+      }
+      h3 {
+          text-decoration:underline;
+          font-size: 50px;
+          font-weight: bold;
+          
+      }
+      #contact-form h4 {
+        color:#fff;
+      }
+      h4{
+        text-align: center;
+      }
+       /*#header-inner {
+           background-color: burlywood;
+       } */
+      /* }    .row-reverse{
+        flex-direction: row-reverse;
+      } */
+           button{
+            background-color: rgb(12, 136, 12);
+            color: #fff;
+            padding: 7px;
+
+          }
+      header {
+          background: whitesmoke;
+      }
+      header .row {
+          align-items: center;
+      }
+      header .generic-container {
+          padding: 12px 0;
+      }
+      header #logo {
+          margin: 0;
+
+      }
+      .logo-img {
+        padding-right :10px;
+        }
+      }
+      nav{
+        align-content: space-between;
+      }
+      header nav {
+          text-align-last: right; 
+          align-content: space-between;
+      }
+      header nav ol {
+          list-style: none;
+          padding-right: 10px;
+          margin: 0;
+      }
+      header nav a:hover{
+          background-color: #fff;
+      }
+      header nav li {
+          display: inline-block;
+          margin-right: 20px;
+          align-content: space-around;
+          
+      }
+      header nav a{
+          font-weight: bolder;
+          color: #ccc;
+      }
+      header nav li:last-child {
+          margin-right: 0;
+      }
+
+      .generic-container {
+          width: 95%;
+          max-width: 980px;
+          margin: 0 auto;
+          box-sizing: border-box;
+      }
+      .row {
+          display:flex;
+          flex-wrap: nowrap; /* flexbox elements will break onto seperate lines */
+      }
+      .col-12 {
+          flex-basis: 100%;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      .col-8 {
+          flex-basis: 72% ;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      .col-6 {
+          flex-basis: 50%;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      .col-4 {
+          flex-basis: 33.33%;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      .col-3 {
+          flex-basis: 25%;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      .col-2 {
+          flex-basis: 16.66%;
+          box-sizing: border-box;
+          padding-left: 10px;
+          padding-right: 10px;
+      }
+      #header-img{
+          background-image: url("images/header-splash-bg.png");
+          background-size :cover;
+          background-position-y: bottom;
+          background-repeat: no-repeat;         
+          
+      }
+
+      #hero {
+          text-align: center;
+          height: 500px;
+          width: 100%;          
+      }
+      #hero h3{
+          margin: 0;
+          font-size: 2em;
+          padding: calc(200px - 44px);
+          color: #fff;
+          margin-bottom: -171px;
+
+      }
+      #hero p{
+        color:#fff;
+      }
+      #hero-icon-div{
+        margin-top:178px;
+        margin-left: 25px;
+      }
+      #iphone-hand{
+        background-image: url("images/hand-with-iphone.png");
+        background-repeat: no-repeat;
+        background-size: 445px;
+        background-position:750px bottom;
+        background-size: fit;
+        height: 384px;
+        background-position-y: -346%;
+
+      }
+
+      .iphone-hand-div{
+        margin-top:62px;
+        margin-left:152px;
+      }
+      #iphone-flat{
+        background-image: url("images/iphone-5c-flat.png");
+        background-repeat: no-repeat;
+        background-size: fit;
+        height:400px;
+      }
+      .iphone-flat-div{
+        margin-top:50px;
+        margin-left:10px;
+      }
+      .design-div{
+        padding-left:64px;
+        padding-top:12px;
+        margin-top:46px;
+      }
+
+       .row generic-container{
+         /* background-color:burlywood;*/
+         display:flex;
+      }
+      #features-icon{
+        float:left;
+      }
+
+      section#features {
+          background: rgb(204, 204, 204);
+      }
+      section#features .generic-container {
+          padding-top: 20px;
+          padding-bottom: 20px;
+      }
+      .feature-block {
+         /*background-color:#fff; */
+          border-radius: 3px;
+          padding: 10px;
+      }
+      .feature-block h4 {
+          margin-top: 0;
+          text-align: center;
+      }
+      .feature-block p {
+          margin-bottom: 0;
+          text-align: center;
+      }
+
+      section#contact h3 {
+          margin-top: 0;
+      }
+      section#contact .generic-container {
+          padding-top: 20px;
+          padding-bottom: 40px;
+          margin-right: -135px;
+          height:100%;
+          align-items:center;
+      }
+      img , li , button{
+          cursor: pointer;
+      }
+      #contact{
+         /* background-color:#E7BC91; */
+          background-image: url("images/newsletter-bg.png");
+          background-repeat: no-repeat;
+          width:100%;
+          height:600px;
+          background-position-y: bottom;
+          background-size: cover;
+      }
+      #contact-description span {
+          font-size: 28px;
+      }
+       /*#contact-form {
+          background-image: url("images/newsletter-bg.png");
+          padding: 15px;
+      }*/
+
+
+      }
+      form#contact-form {
+        display:flex;
+      }
+        /* form#contact-form label { */
+          /* display: block; */
+      }
+      form#contact-form input,
+      form#contact-form textarea {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 5px;
+          font-size: 16px;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-bottom: 12px;
+      }
+       form#contact-form button :hover{
+          background-color:blue ;
+      }
+      
+
+      footer {
+          background: #fff;
+          padding:10px;
+      }
+      footer-credit{
+
+        text-align:left;
+      }
+
+      }
+      footer p {
+          text-align :left;
+      }
+      footer .footer-img{
+        text-align: right;
+      }
+      #iphone-hand{
+        padding:30px;
+        background-color: rgb(204, 204, 204);
+      }
+      .iphone-hand-h3 {
+        color : green;
+      }
+      #Download-it{
+        background-color: #ccc;
+        padding:30px;
+      }
+      .fa-apple.fa-apple {
+        border: 1px solid white;
+      }
+      #iphone-flat{
+        padding:30px;
+      }
+      
+        .inline-block{
+          float: right;
+          right:10px;
+          top:10px;
+        } 
+      
+        /*#no-wrap{
+         display:flex;
+         flex-wrap: nowrap; */
+       }
+      
+      footer{
+        flex-wrap: wrap;
+      }
+      .feature-img{
+        display: block;
+        margin:0px auto;
+        padding:20px;
+        
+      }
+      .features-icon {
+        display:inline-block;
+        margin-left:128px;
+        padding:0;
+        box-sizing: border-box;
+
+
+      }
+      .features-div{
+        margin-top:2px;
+      }
+     
+      #pic-1 #pic-2 ,feature-img {
+        width:100%;
+        box-sizing: border-box;
+      }
+      .fab {
+        font-size: 25px;
+        color:#fff;
+      }
+      @media screen and (max-width:480px;) {
+       header {
+         flex-direction :column;
+       }
+       .logo-img{
+         margin-left:80px;
+         
+       }
+.
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section id="header-img">
+      <div id="header-inner" class="row generic-container">
+        <nav class="col-8">
+          <ol>
+            <li class="left-side-list"><a href="#">Home</a></li>
+            <li class="left-side-list"><a href="#">Photoapp</a></li>
+            <img class="logo-img" src="/images/logo.png">
+            <li class="right-side-list"><a href="#">Design</a></li>
+            <li class="right-side-list"><a href="#">Download</a></li>
+          </ol>
+        </nav>
+      </div>
+      <div id="hero">
+        <div class="generic-container">
+          <h3>YOUR LIFE , A PHOTO</h3>
+          <p>print your life in a simple photo</p>
+          <button>GET STARTED</button>
+        </div>
+        <div id="hero-icon-div">
+          <i class="fab fa-twitter-square"></i>
+         <i class="fab fa-flickr"></i>
+         <i class="fab fa-dribbble-square"></i>
+
+        </div>
+      </div>
+    </section>
+    </header>
+
+    <main>
+      
+
+      <section id="iphone-hand" >
+        <div class="row generic-container iphone-hand-div">
+          
+          <div class="col-6  ">
+            <h3 class="iphone-hand-h3">RAPPRESENT YOUR LIFE WITH A SIMPLE PHOTO</h3>
+            <p>
+              Adipisicing do ut dolore incididunt nostrud nisi ullamco proident
+              non irure. Excepteur excepteur exercitation deserunt laboris
+              cillum aliqua commodo anim sint consectetur. Excepteur minim
+              tempor elit non.
+            </p>
+            <button>GET STARTED</button>
+            
+          </div>
+         
+          <!-- <div class="hand-phone col-6">
+            
+              
+            
+          </div> -->
+        </div>
+        
+      </section>
+      <section >
+        <div class="row generic-container">
+          <div class="col-6 iphone-flat-div" id="iphone-flat">
+            <!-- <img class="iphone-img"
+              src="/images/iphone-5c-flat.png"
+              
+              alt="hand holding Iphone"
+              width="50%" -->
+              
+            
+          </div>
+
+          <div class="col-6 design-div">
+            <h3>DESIGN</h3>
+            <br />
+            <p>
+              Adipisicing do ut dolore incididunt nostrud nisi ullamco proident
+              non irure. Excepteur excepteur exercitation deserunt laboris
+              cillum aliqua commodo anim sint consectetur. Excepteur minim
+              tempor elit non.
+            </p>
+            <button>LEARN MORE</button>
+            <br><br><br>
+            <p>01/05</p>
+          <i class="fas fa-chevron-left"></i>
+          <i class="fas fa-chevron-right"></i>
+          </div>
+          
+        </div>
+      </section>
+
+      <section id="features">
+        
+        <div class="row generic-container features-div">
+          <div><i features-icon class="fas fa-chevron-left features-icon"></i>
+          <i class="fas fa-chevron-right features-icon"></i></div>
+          <div class="col-4" id="no-wrap">
+            <div  class="feature-block">
+              <img class="feature-img" src="/images/logo-green.png" />
+              <h4 class="community">OUR COMMUNITY</h4>
+              <p class="feature-block-p">Lorem ipsum dolor sit amet, consectetur adipisching elit..</p>
+            </div>
+          </div>
+          <div class="col-4  " id="no-wrap pic-1-div">
+            <div class="feature-block">
+              <img id="pic-1" src="/images/example-pic-1.png"  />
+            </div>
+          </div>
+          <div class="col-4 " id="no-wrap">
+            <!-- <div id="features-icon">
+              <i class="fas fa-chevron-left"></i>
+                  <i class="fas fa-chevron-right"></i>
+                </div> -->
+            <div class="feature-block">
+              <img id="pic-2" src="/images/example-pic-2.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="row generic-container">
+          <div class="col-4" form-background>
+            <!--
+                    Two methods of form submission:
+
+                    1. GET: transfers submitted form data through the URL
+                    2. POST: tranfers submitted form data through an HTTP / HTTPS header, which makes it more secure (especially when using HTTPS, because then the data is encrypted)
+
+                    The action attribute specifies WHERE the data should be sent to (what URL)
+                    -->
+            <form id="contact-form" method="GET">
+              <label for="name"><h4 >SUBSCRIBE TO US COMMUNITY<h4></label>
+              <input type="email" id="name" placeholder="YOUR EMAIL" /><i class="fas fa-check"></i>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="Download-it">
+        <div  class="row generic-container ">
+          <div class="col-12 ">
+            <!--was trying to use the center tag but i think i should be good adding class and text-align:center here-->
+           <center> <h4>DOWNLOAD IT</h4><center>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eaque, blanditiis praesentium delectus debitis molestias dolores nostrum. Officiis praesentium in nihil explicabo placeat magnam incidunt saepe atque, dignissimos, eligendi nostrum! </p>
+            <button>APPLE STORE<i class="fab fa-apple"></i></button>
+            <button>PLAY STORE<i class="fab fa-android"></i></button>
+          </div>
+
+      </section>
+    </main>
+
+    <footer>
+      
+      <div class="row generic-container">
+        <div class="col-6">
+          <p>CREDITS | PRIVACY | OUR TEAMS</p>
+          <p>Copyright by phototime - all rights reserved</p>          
+        </div>     
+      
+        <div class="row inline-block">
+          <div class="col-6">
+          <img  src="/images/logo-green.png"/>
+        </div>
+      </div>
+      
+    </footer>
+  </body>
+</html>

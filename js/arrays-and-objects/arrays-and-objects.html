@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <script>
+    
+    let studentNames = [
+        'Steve', 
+        'Matt', 
+        'Adam', 
+        'John', 
+        'Adrien', 
+        'Bob'
+    ];
+
+    for(let i = 0; i < studentNames.length; i++){
+        console.log( studentNames[i] );
+        /*
+        console.log( studentNames[0] );
+        console.log( studentNames[1] );
+        console.log( studentNames[2] );
+        console.log( studentNames[3] );
+        console.log( studentNames[4] );
+        console.log( studentNames[5] );
+        */
+    }
+
+    /* Objects */
+    let myCar = {
+        make: 'Subaru',
+        model: 'Forester',
+        year: 2016,
+        trim: 'Touring'
+    };
+    // functionally the same, different notation
+    console.log( myCar.make ); // Subaru
+    console.log( myCar['make'] );
+
+    console.log(myCar);
+
+    let myLuckyNums = [5, 10, 45, 33, 47, 21, 18];
+    
+    
+
+    // Math.floor( Math.random() * 7 )
+
+    
+
+    let daysOfTheWeek = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+    ];
+
+    let myDate = new Date();
+    //console.log( daysOfTheWeek[ myDate.getDay() ] );
+
+    console.log( `Today's (${daysOfTheWeek[ myDate.getDay() ]}) Lucky Number:`, myLuckyNums[ myDate.getDay() ] );
+
+
+    
+    //console.log( 'Random number:', Math.ceil(Math.random() * 10) );
+
+    // Math.floor()
+    //     14.9 -> 14
+    //     14.1 -> 14
+    //     15 -> 15
+    // Math.ceil()
+    //     14.1 -> 15
+    //     14.9 -> 15
+    //     14 -> 14
+
+
+
+
+    </script>
+</body>
+</html>

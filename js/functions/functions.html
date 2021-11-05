@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+    
+    // function sum(numOne, numTwo){
+    //     return numOne + numTwo;
+    // }
+
+
+    // console.log( sum(2, 8) );
+    // console.log( sum(1, 3) );
+    // console.log( sum(5, 6) );
+
+    // function printName(username){
+    //     console.log(`The username is ${username}.`);
+    // }
+    // printName('Julian');
+    // printName('Adam');
+    // printName('John');
+
+
+    // function with side-effects
+    function printAllNames(nameArr){
+        // 'The usernames are name1, name2, name3, name4, and name5'
+
+        let nameOutput = 'The usernames are ';
+        
+        for(let i = 0; i < nameArr.length-1; i++){
+            nameOutput += nameArr[i] + ', ';
+        }
+        nameOutput += 'and ' + nameArr[nameArr.length-1] + '.';
+
+        // side-effect
+        console.log( nameOutput );
+    }
+
+    printAllNames(['Adam', 'John', 'Adrien', 'Jacob', 'Bob']);
+
+    printAllNames(['Adam', 'John', 'Adrien', 'Jacob', 'Bob', 'Zack', 'Rick']);
+
+    printAllNames(['Adam', 'Bob']);
+
+
+    // pure function
+    function stringAllNames(nameArr){
+        let nameOutput = 'The usernames are ';
+        
+        for(let i = 0; i < nameArr.length-1; i++){
+            nameOutput += nameArr[i] + ', ';
+        }
+        nameOutput += 'and ' + nameArr[nameArr.length-1] + '.';
+
+        return nameOutput;
+    }
+    
+    let myStudents = stringAllNames(['Adam', 'John', 'Adrien', 'Jacob', 'Bob']);
+    console.log(myStudents);
+
+    /*
+    When declaring a function, input (in paratheses) is called parameter/s
+
+    When calling (executing) a function, input (in paratheses) is called argument/s
+    */
+
+    let myGlobalVar = 100;
+
+    // declaring a function with parameters
+    function myFunc(param1, param2, param3){
+        // from this scope, global variables
+        // as well as variables local to this
+        // function can be accessed
+        let localMyFuncVar = 5;
+        console.log(localMyFuncVar);
+        console.log(myGlobalVar);
+    }
+    // calling a function with arguments
+    myFunc('arg1', 'arg2', 'arg3');
+
+    // you cannot access this var since it's
+    // local to the myFunc function (it's in a
+    // different SCOPE)
+    // console.log(localMyFuncVar);
+
+    console.log(myGlobalVar);
+    
+
+
+    </script>
+</body>
+</html>
