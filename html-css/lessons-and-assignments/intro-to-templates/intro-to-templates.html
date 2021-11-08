@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- metadata and links to CSS, or JS code -->
+        <title>Intro to Templates</title>
+
+        <style>
+            /*
+            hashtag / number sign (#) for IDs
+
+            period (.) for classes
+            */
+
+            /*
+            Display property
+                block / list-item will take up the full width
+                    this will prevent elements from aligning side-by-side
+
+                inline will only take up as much space at it needs
+                    BUT, it will ignore vertical (top / bottom) margins
+                
+                inline-block will only take up as much space as it needs
+                    while still respecting margins on all sides
+            */
+
+            body {
+                margin: 0;
+            }
+            header {
+                background-color: lightblue;
+                margin-bottom: 30px;
+            }
+            header .generic-container {
+                padding: 10px 0;
+            }
+            header #logo {
+                margin: 0 30px 0 0;
+            }
+            header #logo, header nav, header nav li {
+                display: inline-block;
+            }
+            header nav ol {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            header nav li {
+                margin-right: 20px;
+            }
+            header nav li:last-child {
+                margin-right: 0;
+            }
+
+            .generic-container {
+                width: 95%;
+                max-width: 980px;
+                margin: 0 auto; /* this will horizontally center */
+
+                /* margin: all;
+                margin: top right bottom left;
+                margin: vertical horizontal; */
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="generic-container">
+                <h1 id="logo">Logo</h1>
+
+                <nav>
+                    <ol>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div class="generic-container">
+                    Magna laborum laborum est mollit aliqua nostrud eiusmod. Ea elit commodo minim quis duis anim elit qui consectetur. Occaecat aute commodo irure incididunt qui cillum adipisicing eiusmod in. Fugiat dolore eu exercitation proident quis amet minim consectetur mollit aliquip. Sit minim et dolor id excepteur sunt eiusmod incididunt.
+                </div>
+            </section>
+        </main>
+
+        <aside></aside>
+
+        <footer></footer>
+    </body>
+</html>
