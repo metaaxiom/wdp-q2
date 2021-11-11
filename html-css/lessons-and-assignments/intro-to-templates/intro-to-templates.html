@@ -13,14 +13,21 @@
 
             /*
             Display property
-                block / list-item will take up the full width
+                block / list-item will take up the full width (of its container)
                     this will prevent elements from aligning side-by-side
+                    default block elements: div, header, footer...
 
                 inline will only take up as much space at it needs
                     BUT, it will ignore vertical (top / bottom) margins
+                    default inline elements: span
                 
                 inline-block will only take up as much space as it needs
                     while still respecting margins on all sides
+            */
+
+            /*
+            div and span are both very generic and malleable elements (they can serve whatever purpose)
+                however, span is by default inline, whereas div is by default block
             */
 
             body {
@@ -34,10 +41,16 @@
                 padding: 10px 0;
             }
             header #logo {
-                margin: 0 30px 0 0;
+                margin: 0;
+                float: left;
+            }
+            header nav {
+                float: right;
+                padding-top: 10px;
             }
             header #logo, header nav, header nav li {
                 display: inline-block;
+                box-sizing: border-box;
             }
             header nav ol {
                 list-style-type: none;
@@ -60,13 +73,71 @@
                 margin: top right bottom left;
                 margin: vertical horizontal; */
             }
+
+            section {
+                margin-bottom: 20px;
+            }
+
+            #first-section img {
+                float: left;
+                margin-right: 8px;
+            }
+            /* #first-section .generic-container::after,
+            #second-section .generic-container::after {
+                content: '';
+                display: block;
+                clear: both;
+            } */
+            .clearfix::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+
+
+            .second-section-boxes {
+                border: 1px solid black;
+                float: left;
+                width: 25%;
+                padding: 10px;
+                box-sizing: border-box;
+                /* display: inline-block;
+                margin-right: -4px; */
+            }
+            /* .second-section-boxes:last-child {
+                margin-right: 0;
+            } */
+
+            /* .clearfix {
+                clear: both;
+            } */
+
+            #third-section .generic-container {
+                display: flex;
+                /*
+                flex-direction
+                    row (default): horizontal, side-by-side
+                    column: vertical, top-to-bottom
+                
+                flex-basis:
+                    when flex-direction = row, then width-wise
+                    when flex-direction = column, then height-wise
+                */
+            }
+            #third-section .flex-item {
+                border: 1px solid black;
+                /* width: 25%; */
+                flex-basis: 200px;
+            }
+
             
         </style>
     </head>
 
     <body>
         <header>
-            <div class="generic-container">
+            <div class="generic-container clearfix">
                 <h1 id="logo">Logo</h1>
 
                 <nav>
@@ -86,12 +157,41 @@
         </header>
 
         <main>
-            <section>
-                <div class="generic-container">
-                    Magna laborum laborum est mollit aliqua nostrud eiusmod. Ea elit commodo minim quis duis anim elit qui consectetur. Occaecat aute commodo irure incididunt qui cillum adipisicing eiusmod in. Fugiat dolore eu exercitation proident quis amet minim consectetur mollit aliquip. Sit minim et dolor id excepteur sunt eiusmod incididunt.
+            <section id="first-section">
+                <div class="generic-container clearfix">
+                    <img src="./images/image1.jpg" alt="meadow">
+
+                    <h2>First Section</h2>
+                    <p>Magna laborum laborum est mollit aliqua nostrud eiusmod. Ea elit commodo minim quis duis anim elit qui consectetur. Occaecat aute commodo irure incididunt qui cillum adipisicing eiusmod in. Fugiat dolore eu exercitation proident quis amet minim consectetur mollit aliquip. Sit minim et dolor id excepteur sunt eiusmod incididunt. Consequat culpa mollit aliqua id consequat incididunt enim tempor ad aute fugiat occaecat ut. Et Lorem id ex est. Commodo officia enim do irure Lorem pariatur labore aliqua duis. Quis minim eu consequat Lorem. Aliqua ullamco officia veniam exercitation deserunt sint velit. In sint labore nostrud consectetur velit. Nisi dolor occaecat cupidatat irure labore proident et consectetur sit sint ex adipisicing ea. Cupidatat occaecat velit aute et eu nulla sit ea. Amet deserunt id sint id. Tempor elit sit in deserunt excepteur commodo eiusmod amet excepteur. Ad magna do irure dolore incididunt et et eu nisi elit proident elit nulla commodo. Aliquip id culpa est officia sit reprehenderit velit ad occaecat dolor duis et. Exercitation eiusmod ex nostrud in Lorem cupidatat dolore reprehenderit cillum sunt. Pariatur Lorem adipisicing ullamco culpa nisi adipisicing tempor sint cillum ex et esse laboris Lorem. Cupidatat labore voluptate nostrud nulla quis excepteur aliquip laborum ad excepteur ipsum ad. Est quis esse magna amet cillum aliquip in cupidatat do nisi id nulla. Cupidatat in elit in in consectetur ex reprehenderit cillum consequat minim ut non nostrud nostrud. Nulla nostrud tempor ipsum aliquip sunt id. Ad ut exercitation mollit ad Lorem proident velit minim sunt id cupidatat amet. Minim non id esse ipsum pariatur magna voluptate amet ad sint. Irure occaecat laboris laboris do laborum laboris. Cupidatat pariatur ea tempor ut Lorem esse. Nisi tempor sunt sit sint ullamco laboris voluptate labore consectetur consectetur. Pariatur ut laboris eu qui Lorem irure exercitation duis laboris proident in culpa minim amet. Qui aliqua labore excepteur eiusmod dolore veniam Lorem pariatur elit velit. Dolore ea fugiat aliqua non ad adipisicing eu cillum elit qui id quis sit proident. Ut duis ex voluptate velit enim cillum esse ex Lorem consequat mollit est fugiat. Laborum incididunt magna pariatur mollit dolor. Cupidatat aliqua irure ad ea elit aliquip voluptate deserunt in Lorem ullamco officia officia amet. Velit sit officia magna exercitation non enim ullamco fugiat laborum ullamco officia. Amet aliqua consequat consectetur nulla adipisicing veniam et voluptate fugiat ad ut. Laboris sint ipsum laborum sit irure ullamco consectetur sit voluptate do exercitation ut culpa. Proident sunt sint ut ex ad ullamco nisi excepteur amet reprehenderit proident ut aliqua amet. Laboris ad magna consectetur proident qui minim est labore in. Eiusmod qui anim fugiat dolor ipsum et eu exercitation. Exercitation aliqua quis deserunt qui velit esse veniam mollit occaecat anim elit ex do ea. Lorem cillum eiusmod dolore velit commodo amet ipsum aliquip. Dolore aute dolor sunt minim aliqua consectetur excepteur ad duis ad labore eiusmod Lorem cupidatat. Culpa incididunt minim cupidatat laboris est nisi non dolore amet qui. Elit laborum consequat velit nostrud enim enim dolore. Aliqua ut laborum deserunt nulla in dolor commodo. Dolore exercitation ea sint aliqua. Fugiat voluptate in dolor mollit duis magna reprehenderit cillum dolor in est voluptate qui.</p>
                 </div>
             </section>
+
+            <section id="second-section">
+                <div class="generic-container clearfix">
+                    <div id="box-1" class="second-section-boxes">Box 1</div>
+
+                    <div id="box-2" class="second-section-boxes">Box 2</div>
+
+                    <div id="box-3" class="second-section-boxes">Box 3</div>
+
+                    <div id="box-4" class="second-section-boxes">Box 4</div>
+
+                    <!-- <div class="clearfix"></div> -->
+                </div>
+            </section>
+
+            <section id="third-section">
+                <div class="generic-container">
+                    <div id="flex-item-1" class="flex-item">Flex Item 1</div>
+                    <div id="flex-item-2" class="flex-item">Flex Item 2</div>
+                    <div id="flex-item-3" class="flex-item">Flex Item 3</div>
+                    <div id="flex-item-4" class="flex-item">Flex Item 4</div>
+                </div>
+            </section>
+
         </main>
+
+
 
         <aside></aside>
 
