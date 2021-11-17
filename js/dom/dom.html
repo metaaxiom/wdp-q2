@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM: Document Object Model</title>
+    <style>
+        /* #par-1 {
+            color: red;
+        }
+
+        #myBtn:hover {
+            background-color: green;
+        } */
+    </style>
+
+</head>
+<body>
+    <p id="par-1">Irure exercitation aute sint excepteur labore consectetur cupidatat magna mollit culpa laborum elit veniam id. Ad deserunt esse ut nulla aute qui consequat aliqua consequat pariatur. Nostrud ad dolore laborum enim. Fugiat aliqua aliqua duis adipisicing sunt excepteur et ipsum. In esse veniam commodo sit velit ex dolore qui.</p>
+
+    <button id="btn-1">Change Paragraph Color</button>
+
+
+    <p class="par-grp">Minim sint ullamco cillum mollit cupidatat est. Irure elit irure non fugiat esse amet cillum minim. Excepteur exercitation et in esse culpa pariatur cillum ullamco in sint deserunt eiusmod ipsum. Pariatur proident excepteur ut consequat nulla duis eu ut aliquip. Occaecat adipisicing ad proident velit non ex occaecat.</p>
+    <p class="par-grp">Ad esse ullamco eu consequat dolor elit fugiat proident deserunt labore reprehenderit. Quis occaecat ut eiusmod minim cillum sit esse. Reprehenderit cillum sit irure ipsum incididunt ut voluptate aute do dolor do. Ullamco veniam eu reprehenderit sit ullamco voluptate amet eiusmod. Excepteur officia cillum in veniam. Minim consectetur adipisicing dolore sit cillum adipisicing tempor nostrud velit sint dolor consequat.</p>
+    <p class="par-grp">Nulla laborum anim nisi mollit et et proident ad eiusmod ex nostrud mollit est eu. Commodo esse sunt nostrud do tempor sint qui quis veniam. Aliqua excepteur deserunt sit reprehenderit aliqua dolor nostrud eiusmod ipsum pariatur sint. Ullamco exercitation in ad sunt adipisicing mollit exercitation officia voluptate irure in sunt magna in. Reprehenderit velit laboris incididunt est reprehenderit nostrud deserunt fugiat ipsum dolor ad. Labore sit pariatur aute incididunt dolor. Enim dolor sunt sunt anim ea eiusmod elit irure aliqua elit reprehenderit ad.</p>
+
+    
+    <script>
+        /*
+        1. Event: clicking on btn1
+        2. Changing the color of the par
+        */
+
+        let btn1 = document.getElementById('btn-1');
+        let par1 = document.getElementById('par-1');
+        let parGrp = document.getElementsByClassName('par-grp');
+        
+        
+        btn1.onclick = function(){
+            par1.style.color = 'red';
+        };
+
+        // btn1.addEventListener('click', function(){
+        //     par1.style.color = 'red';
+        // });
+
+        // function myFunc(input){
+        //     let output = input + 5;
+        //     return output;
+        // }
+        // myFunc(10) // 15
+        // myFunc(20) // 25
+        // myFunc(30) // 35
+        // myFunc(40) // 45
+
+    
+
+
+    </script>
+
+    
+</body>
+</html>
