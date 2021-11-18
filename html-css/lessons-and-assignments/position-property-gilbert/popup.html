@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Popup</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <style>
+        body {
+            margin: 0;
+            background: lightsteelblue;
+        }
+        body, button, input {
+            font-family: 'Roboto', sans-serif;
+        }
+        #newsletter-popup {
+            width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            -webkit-box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.5);
+            box-shadow: 0px 0px 8px 4px rgba(0,0,0,0.3);
+            position: relative;
+            background-color: #fff;
+            border-radius: 3px;
+        }
+        #newsletter-exit {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            padding: 0;
+            cursor: pointer;
+        }
+        #newsletter-popup h2, 
+        #newsletter-popup p {
+            text-align: center;
+        }
+        #newsletter-popup form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .newsletter-input {
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        .newsletter-input, #newsletter-btn {
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 3px;
+        }
+        #newsletter-first-name {
+            margin-right: 10px;
+        }
+        #newsletter-first-name,
+        #newsletter-last-name {
+            flex-grow: 1;
+        }
+        #newsletter-email {
+            flex-grow: 2;
+        }
+        #newsletter-btn {
+            flex-basis: 100%;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="newsletter-popup">
+        <button id="newsletter-exit">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <h2><i class="far fa-newspaper"></i> Join our Newsletter!</h2>
+        <p>Elit eiusmod nulla minim ullamco qui do cillum.</p>
+        
+        <form>
+            <input type="text" id="newsletter-first-name" class="newsletter-input" placeholder="First Name">
+            <input type="text" id="newsletter-last-name" class="newsletter-input" placeholder="Last Name">
+            <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Email Address">
+            <button id="newsletter-btn">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
