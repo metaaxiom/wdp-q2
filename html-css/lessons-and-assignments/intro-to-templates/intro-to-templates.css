@@ -1,0 +1,195 @@
+/*
+hashtag / number sign (#) for IDs
+
+period (.) for classes
+*/
+
+/*
+Display property
+    block / list-item will take up the full width (of its container)
+        this will prevent elements from aligning side-by-side
+        default block elements: div, header, footer...
+
+    inline will only take up as much space at it needs
+        BUT, it will ignore vertical (top / bottom) margins
+        default inline elements: span
+    
+    inline-block will only take up as much space as it needs
+        while still respecting margins on all sides
+*/
+
+/*
+div and span are both very generic and malleable elements (they can serve whatever purpose)
+    however, span is by default inline, whereas div is by default block
+*/
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Crete Round', serif;
+}
+header {
+    background-color: #000;
+    color: #fff;
+}
+header .generic-container {
+    padding: 10px 0;
+}
+header #logo {
+    margin: 0;
+    float: left;
+}
+header nav {
+    float: right;
+    padding-top: 10px;
+}
+header #logo, header nav, header nav li {
+    display: inline-block;
+    box-sizing: border-box;
+}
+header nav ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+header nav li {
+    margin-right: 20px;
+}
+header nav li:last-child {
+    margin-right: 0;
+}
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+header nav a:hover {
+    color: rgb(255 171 0);
+}
+
+.generic-container {
+    width: 95%;
+    max-width: 980px;
+    margin: 0 auto; /* this will horizontally center */
+
+    /* margin: all;
+    margin: top right bottom left;
+    margin: vertical horizontal; */
+}
+
+#hero {
+    background-image: url('./images/hero-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    height: 500px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+#hero .generic-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#hero h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+    font-weight: bold;
+}
+button#hero-cta {
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background: rgb(255,200,0);
+    background: linear-gradient(180deg, rgba(255,200,0,1) 0%, rgba(255,153,0,1) 100%);
+    color: #fff;
+    padding: 12px 26px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#first-section img {
+    float: left;
+    margin-right: 8px;
+}
+/* #first-section .generic-container::after,
+#second-section .generic-container::after {
+    content: '';
+    display: block;
+    clear: both;
+} */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+.second-section-boxes {
+    border: 1px solid black;
+    float: left;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* display: inline-block;
+    margin-right: -4px; */
+}
+/* .second-section-boxes:last-child {
+    margin-right: 0;
+} */
+
+/* .clearfix {
+    clear: both;
+} */
+
+#third-section .generic-container {
+    display: flex;
+    /*
+    flex-direction
+        row (default): horizontal, side-by-side
+        column: vertical, top-to-bottom
+    
+    flex-basis:
+        when flex-direction = row, then width-wise
+        when flex-direction = column, then height-wise
+    */
+}
+#third-section .flex-item {
+    border: 1px solid black;
+    /* width: 25%; */
+    flex-basis: 200px;
+}
+
+#flexbox-example-section .generic-container {
+    display: flex;
+    justify-content: space-between;
+}
+.fe-item {
+    border: 1px solid black;
+    flex-basis: 30%;
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+footer .generic-container {
+    text-align: center;
+    padding: 20px 10px;
+}

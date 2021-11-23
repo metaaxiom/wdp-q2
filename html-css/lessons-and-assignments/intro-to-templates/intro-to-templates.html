@@ -4,141 +4,17 @@
         <!-- metadata and links to CSS, or JS code -->
         <title>Intro to Templates</title>
 
-        <style>
-            /*
-            hashtag / number sign (#) for IDs
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Crete+Round:ital@0;1&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-            period (.) for classes
-            */
-
-            /*
-            Display property
-                block / list-item will take up the full width (of its container)
-                    this will prevent elements from aligning side-by-side
-                    default block elements: div, header, footer...
-
-                inline will only take up as much space at it needs
-                    BUT, it will ignore vertical (top / bottom) margins
-                    default inline elements: span
-                
-                inline-block will only take up as much space as it needs
-                    while still respecting margins on all sides
-            */
-
-            /*
-            div and span are both very generic and malleable elements (they can serve whatever purpose)
-                however, span is by default inline, whereas div is by default block
-            */
-
-            body {
-                margin: 0;
-            }
-            header {
-                background-color: lightblue;
-                margin-bottom: 30px;
-            }
-            header .generic-container {
-                padding: 10px 0;
-            }
-            header #logo {
-                margin: 0;
-                float: left;
-            }
-            header nav {
-                float: right;
-                padding-top: 10px;
-            }
-            header #logo, header nav, header nav li {
-                display: inline-block;
-                box-sizing: border-box;
-            }
-            header nav ol {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-            }
-            header nav li {
-                margin-right: 20px;
-            }
-            header nav li:last-child {
-                margin-right: 0;
-            }
-
-            .generic-container {
-                width: 95%;
-                max-width: 980px;
-                margin: 0 auto; /* this will horizontally center */
-
-                /* margin: all;
-                margin: top right bottom left;
-                margin: vertical horizontal; */
-            }
-
-            section {
-                margin-bottom: 20px;
-            }
-
-            #first-section img {
-                float: left;
-                margin-right: 8px;
-            }
-            /* #first-section .generic-container::after,
-            #second-section .generic-container::after {
-                content: '';
-                display: block;
-                clear: both;
-            } */
-            .clearfix::after {
-                content: '';
-                display: block;
-                clear: both;
-            }
-
-
-
-            .second-section-boxes {
-                border: 1px solid black;
-                float: left;
-                width: 25%;
-                padding: 10px;
-                box-sizing: border-box;
-                /* display: inline-block;
-                margin-right: -4px; */
-            }
-            /* .second-section-boxes:last-child {
-                margin-right: 0;
-            } */
-
-            /* .clearfix {
-                clear: both;
-            } */
-
-            #third-section .generic-container {
-                display: flex;
-                /*
-                flex-direction
-                    row (default): horizontal, side-by-side
-                    column: vertical, top-to-bottom
-                
-                flex-basis:
-                    when flex-direction = row, then width-wise
-                    when flex-direction = column, then height-wise
-                */
-            }
-            #third-section .flex-item {
-                border: 1px solid black;
-                /* width: 25%; */
-                flex-basis: 200px;
-            }
-
-            
-        </style>
+        <link rel="stylesheet" href="./intro-to-templates.css">
     </head>
 
     <body>
         <header>
             <div class="generic-container clearfix">
-                <h1 id="logo">Logo</h1>
+                <h1 id="logo">Travel</h1>
 
                 <nav>
                     <ol>
@@ -157,6 +33,15 @@
         </header>
 
         <main>
+            <div id="hero">
+                <div class="generic-container">
+                    <h1>Adventure Awaits!</h1>
+                    <button id="hero-cta">
+                        Travel With Us
+                    </button>
+                </div>
+            </div>
+
             <section id="first-section">
                 <div class="generic-container clearfix">
                     <img src="./images/image1.jpg" alt="meadow">
@@ -189,12 +74,23 @@
                 </div>
             </section>
 
-        </main>
+            <section id="flexbox-example-section">
+                <div class="generic-container">
+                    <div class="fe-item">Flexbox Ex 1</div>
+                    <div class="fe-item">Flexbox Ex 2</div>
+                    <div class="fe-item">Flexbox Ex 3</div>
+                </div>
+            </section>
 
+        </main>
 
 
         <aside></aside>
 
-        <footer></footer>
+        <footer>
+            <div class="generic-container">
+                Travel Copyright 2021 &copy;
+            </div>
+        </footer>
     </body>
 </html>

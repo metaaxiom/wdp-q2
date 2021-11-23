@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Slideshow</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <style>
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+        button {
+            border: none;
+            background: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .centered-container {
+            margin: 0 auto;
+            max-width: 1020px;
+            padding: 30px 10px;
+            box-sizing: border-box;
+        }
+        #slideshow-btn-container {
+            text-align: right;
+        }
+        #slideshow-img-container {
+            white-space: nowrap;
+            overflow-x: scroll;
+        }
+        .img-wrapper {
+            display: inline-block;
+            width: calc(50% - 5px);
+            margin-right: 6px;
+        }
+        .img-wrapper:last-child {
+            margin-right: 0;
+        }
+        .img-wrapper img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <div class="centered-container">
+
+            <div id="slideshow-btn-container">
+                <button id="slideshow-left-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="slideshow-right-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div id="slideshow-img-container">
+                <div class="img-wrapper">
+                    <img src="./images/image-1.jpg">
+                </div>
+                <div class="img-wrapper">
+                    <img src="./images/image-2.jpg">
+                </div>
+                <div class="img-wrapper">
+                    <img src="./images/image-3.jpg">
+                </div>
+                <div class="img-wrapper">
+                    <img src="./images/image-4.jpg">
+                </div>
+                <div class="img-wrapper">
+                    <img src="./images/image-5.jpg">
+                </div>
+                <div class="img-wrapper">
+                    <img src="./images/image-6.jpg">
+                </div>
+                <div class="img-wrapper">
+                    <img src="./images/image-7.jpg">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script>
+
+        let slideshowImgContainer = document.getElementById('slideshow-img-container');
+
+        document.getElementById('slideshow-left-btn').onclick = function(){
+            slideshowImgContainer.scrollLeft = slideshowImgContainer.scrollLeft - 200;
+        };
+
+        document.getElementById('slideshow-right-btn').onclick = function(){
+            slideshowImgContainer.scrollLeft = slideshowImgContainer.scrollLeft + 200;
+        };
+    </script>
+</body>
+</html>
