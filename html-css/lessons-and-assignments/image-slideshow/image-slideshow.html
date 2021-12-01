@@ -22,11 +22,13 @@
             box-sizing: border-box;
         }
         #slideshow-btn-container {
-            text-align: right;
+            display: flex;
+            justify-content: space-between;
         }
         #slideshow-img-container {
             white-space: nowrap;
-            overflow-x: scroll;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
         }
         .img-wrapper {
             display: inline-block;
@@ -39,6 +41,15 @@
         .img-wrapper img {
             width: 100%;
         }
+
+        /* #color-change {
+            transition: color 5s linear;
+        } */
+        /* #size-div {
+            width: 100px;
+            background-color: lightblue;
+            transition: width 5s linear;
+        } */
     </style>
 </head>
 <body>
@@ -79,21 +90,34 @@
                 </div>
             </div>
 
+            <!-- <div id="size-div">Size Div</div> -->
         </div>
     </section>
 
 
     <script>
 
-        let slideshowImgContainer = document.getElementById('slideshow-img-container');
+        let imgWrapperFirst = document.getElementsByClassName('img-wrapper')[0];
+        let scrollAmount = imgWrapperFirst.scrollWidth;
+        let gapAmount = 10;
 
-        document.getElementById('slideshow-left-btn').onclick = function(){
-            slideshowImgContainer.scrollLeft = slideshowImgContainer.scrollLeft - 200;
+        // store the selected elmnt in a var for use later
+        let imgContainer = document.getElementById('slideshow-img-container');
+        let leftBtn = document.getElementById('slideshow-left-btn');
+        let rightBtn = document.getElementById('slideshow-right-btn');
+
+        leftBtn.onclick = function(){
+            imgContainer.scrollLeft = imgContainer.scrollLeft - (scrollAmount + gapAmount);
+            console.log(imgContainer.scrollLeft);
         };
 
-        document.getElementById('slideshow-right-btn').onclick = function(){
-            slideshowImgContainer.scrollLeft = slideshowImgContainer.scrollLeft + 200;
+        rightBtn.onclick = function(){
+            imgContainer.scrollLeft = imgContainer.scrollLeft + (scrollAmount + gapAmount);
+            console.log(imgContainer.scrollLeft);
         };
+
+        // let sizeDiv = document.getElementById('size-div');
+        // sizeDiv.style.width = sizeDiv.offsetWidth + 300 + 'px';
     </script>
 </body>
 </html>

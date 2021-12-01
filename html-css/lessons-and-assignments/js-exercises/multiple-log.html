@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multiple Log</title>
+</head>
+<body>
+    <script>
+    
+    /*
+    Write a function which takes in two parameters: a string and a number
+    Then, replicate the string in one line, however many times the number
+    parameter requires
+    */
+
+    function replicate(str, reps){
+        if(reps > 1000000){
+            return 'Num input too large.';
+        }
+
+        let strFinal = '';
+        while(reps > 0){
+            strFinal += str;
+            reps--;
+        }
+        return strFinal;
+    };
+
+    console.log( replicate('Apple', 10) );
+
+    console.log( replicate('Orange', 100) );
+
+    console.log( replicate('Spam', 1000000) );
+
+    console.log( replicate('Spam', 1000001) );
+
+    </script>
+</body>
+</html>

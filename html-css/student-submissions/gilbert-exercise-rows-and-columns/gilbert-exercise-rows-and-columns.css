@@ -1,0 +1,27 @@
+body {
+    margin:0;
+    background-color: beige;
+}
+
+wrapper {
+    width:95%;
+    margin:0 auto;
+}
+.flex-container{background-color: azure; display: flex;justify-content: space-between; flex-flow: row wrap; width:100%;height:400px;}
+.row-1{background-color: rgb(43, 226, 113);flex: 0 0 100%;}
+.row-2-1{background-color: cadetblue; flex: 0 0 46%;}
+.row-2-2{background-color: cadetblue;flex: 0 0 46%;}
+.row-3-1{background-color:darkkhaki; flex: 0 0 30.83%;}
+.row-3-2{background-color: darkkhaki;flex: 0 0 30.83%;}
+.row-3-3{background-color: darkkhaki; flex: 0 0 30.83%;}
+.row-4-1{background-color: darkorange;flex: 0 0 22.5%;}
+.row-4-2{background-color: darkorange;flex: 0 0 22.5%;}
+.row-4-3{background-color:darkorange;flex: 0 0 22.5%;}
+.row-4-4{background-color: darkorange;flex:  0 0 22.5%;}
+.row-5-1{background-color: darkturquoise;flex: 0 0 11.66%;}
+.row-5-2{background-color: darkturquoise;flex: 0 0 11.66%;}
+.row-5-3{background-color: darkturquoise;flex: 0 0 11.66%;}
+.row-5-4{background-color: darkturquoise; flex: 0 0 11.66%;}
+.row-5-5{background-color:darkturquoise ;flex: 0 0 11.66%;}
+.row-5-6{background-color: darkturquoise; flex: 0 0 11.66%;}
+.col{text-align: center;color:white; padding-top:25px;}
