@@ -87,6 +87,9 @@ window.onload = function(){
     }
 };
 
+let someVar = 5;
+let someVar = 7;
+
 function displayResult(message, highlight){
     let resultsBoard = document.getElementById('results-board');
 
