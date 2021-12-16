@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        #grid-container {
+            display: grid;
+            /* grid-template-columns: 100px 200px 300px; */
+            grid-template-columns: repeat(3, 1fr) 100px;
+            grid-template-rows: 200px 100px;
+            grid-auto-rows: 50px;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        .my-divs {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #flex-container {
+            display: flex;
+            margin-top: 50px;
+        }
+        #flex-container div {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        #flex-item-1 {
+            flex-grow: 1;
+        }
+        #flex-item-2 {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="grid-container">
+        <div id="div-1" class="my-divs">Div 1</div>
+        <div id="div-2" class="my-divs">Div 2</div>
+        <div id="div-3" class="my-divs">Div 3</div>
+        <div id="div-4" class="my-divs">Div 4</div>
+        <div id="div-5" class="my-divs">Div 5</div>
+        <div id="div-6" class="my-divs">Div 6</div>
+        <div id="div-7" class="my-divs">Div 7</div>
+        <div id="div-8" class="my-divs">Div 8</div>
+        <div id="div-9" class="my-divs">Div 9</div>
+        <div id="div-10" class="my-divs">Div 10</div>
+        <div id="div-11" class="my-divs">Div 11</div>
+        <div id="div-12" class="my-divs">Div 12</div>
+    </div>
+
+    <div id="flex-container">
+        <div id="flex-item-1">Flex Item 1</div>
+        <div id="flex-item-2">Flex Item 2</div>
+    </div>
+    
+</body>
+</html>
