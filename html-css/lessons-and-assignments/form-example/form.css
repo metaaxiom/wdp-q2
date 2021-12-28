@@ -1,0 +1,117 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+a {
+  text-decoration: none;
+}
+label {
+  font-size: 14px;
+}
+body,
+input,
+textarea,
+select,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+button {
+  padding: 10px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(168, 168, 168);
+  cursor: pointer;
+}
+
+#contact-container {
+  display: flex;
+  width: 980px;
+}
+#contact-container #contact-info-container {
+  flex-basis: 50%;
+  background-image: url("./images/skyscraper-bg.jpg");
+  background-size: cover;
+  color: #ccc;
+}
+#contact-info-container-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-container #contact-info-container h4 {
+  color: #fff;
+}
+#contact-container #contact-info-container a {
+  color: rgb(77, 180, 63);
+}
+#contact-container #form-container {
+  background-color: #fff;
+  flex-basis: 50%;
+  padding: 30px;
+}
+#contact-container #form-container h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.form-split-row,
+.form-full-row {
+  margin-bottom: 15px;
+}
+.form-split-row {
+  display: flex;
+}
+.form-split-row .form-col {
+  margin-right: 10px;
+}
+.form-split-row .form-col:last-child {
+  margin-right: 0;
+}
+.form-full-row {
+}
+
+#form-newsletter-row .form-col {
+  display: flex;
+  align-items: center;
+}
+#form-newsletter-row input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+#form-btn-row {
+  text-align: center;
+  margin-top: 40px;
+}
+#form-btn {
+  background-color: rgb(77, 180, 63);
+  width: 100%;
+}

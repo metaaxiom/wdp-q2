@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Example</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <div id="contact-container">
+      <div id="contact-info-container">
+        <div id="contact-info-container-overlay">
+          <ul class="fa-ul">
+            <li>
+              <span class="fa-li"><i class="far fa-map-marker-alt"></i></span>
+              <h4>Address</h4>
+              <p>
+                Mada Center 8th Floor, 379 Hudson St.<br />
+                New York, NY 10018 US
+              </p>
+            </li>
+            <li>
+              <span class="fa-li"><i class="far fa-phone"></i></span>
+              <h4>Let's Talk</h4>
+              <p><a href="#">+1 800 1235879</a></p>
+            </li>
+            <li>
+              <span class="fa-li"><i class="far fa-envelope"></i></span>
+              <h4>General Support</h4>
+              <p>
+                <a href="#">contact@example.com</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="form-container">
+        <h2>Send Us a Message</h2>
+        <form>
+          <div class="form-split-row">
+            <div class="form-col">
+              <label for="form-first-name">First Name</label>
+              <input id="form-first-name" type="text" />
+            </div>
+            <div class="form-col">
+              <label for="form-last-name">Last Name</label>
+              <input id="form-last-name" type="text" />
+            </div>
+          </div>
+
+          <div class="form-full-row">
+            <div class="form-col">
+              <label for="form-email">Email</label>
+              <input id="form-email" type="email" />
+            </div>
+          </div>
+
+          <div class="form-full-row">
+            <div class="form-col">
+              <label for="form-phone">Phone</label>
+              <input
+                id="form-phone"
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              />
+            </div>
+          </div>
+
+          <div class="form-full-row">
+            <div class="form-col">
+              <label for="form-inquiry-type"
+                >What Are You Inquiring About?</label
+              >
+              <select id="form-inquiry-type">
+                <option value="graphic-design">Graphic Design</option>
+                <option value="web-design">Web Design</option>
+                <option value="seo">SEO</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-full-row">
+            <div class="form-col">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" rows="8"></textarea>
+            </div>
+          </div>
+
+          <div id="form-newsletter-row" class="form-full-row">
+            <div class="form-col">
+              <input
+                id="form-newsletter"
+                type="checkbox"
+                value="newsletter"
+                checked
+              />
+              <label for="form-newsletter">Sign Up for Newsletter?</label>
+            </div>
+          </div>
+
+          <div id="form-btn-row" class="form-full-row">
+            <div class="form-col">
+              <button id="form-btn">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
