@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #eee;
+}
+a {
+  color: rgb(47, 212, 69);
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+}
+#contact-container {
+  display: flex;
+  width: 980px;
+}
+#contact-info-panel,
+#contact-form-panel {
+  flex-basis: 50%;
+}
+#contact-info-panel {
+  background-image: url("./images/skyscraper-bg.jpg");
+  background-size: cover;
+  color: #ccc;
+}
+#contact-info-panel-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}
+#contact-info-panel h4 {
+  color: #fff;
+}
+#contact-info-panel h4:first-child {
+  margin-top: 0;
+}
+#contact-info-panel ul {
+  margin: 0;
+}
+#contact-form-panel {
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.form-split-row {
+  display: flex;
+}
+.form-split-row .form-col {
+  flex-basis: 50%;
+  margin-right: 10px;
+}
+.form-split-row .form-col:last-child {
+  margin-right: 0;
+}
+.form-full-row {
+}
