@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #eee;
+}
+body,
+input,
+textarea,
+select,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+}
+a {
+  color: rgb(47, 212, 69);
+}
+
+#contact-container {
+  display: flex;
+  width: 980px;
+  justify-content: space-evenly;
+}
+#contact-form-panel,
+#contact-info-panel {
+  flex-basis: 50%;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea,
+button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+#contact-info-panel {
+  background-image: url("./images/skyscraper-bg.jpg");
+  background-size: cover;
+  color: #ccc;
+}
+#contact-info-panel-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#contact-info-panel h4 {
+  margin-top: 0;
+  color: #fff;
+}
+ul.fa-ul {
+  margin-top: 0;
+}
+
+#contact-form-panel {
+  padding: 30px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+#contact-form-panel h2 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-weight: 300; /* light */
+}
+.form-split-row {
+  display: flex;
+}
+.form-split-row .form-col {
+  flex-basis: 50%;
+  margin-right: 10px;
+}
+.form-split-row .form-col:last-child {
+  margin-right: 0;
+}
+#form-newsletter {
+  margin-left: 0;
+  margin-right: 15px;
+}
+#form-button {
+  margin: 35px 0 0 0;
+  background-color: rgb(47, 212, 69);
+  text-align: center;
+  color: #fff;
+  padding: 20px 30px;
+  cursor: pointer;
+}
