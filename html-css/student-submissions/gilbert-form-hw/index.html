@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Latest Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="center-container">
+      <form action="">
+        <div id="form-for-name">
+          <div class="form-components">
+            <label for="First-name">First Name</label>
+            <input
+              type="text"
+              name="First-name"
+              id="First-name"
+              placeholder="Fill in First Name"
+            />
+          </div>
+          <div class="form-components">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Fill in last Name"
+            />
+          </div>
+        </div>
+        <div class="form-components">
+          <label for="form-number">Your age</label>
+          <input
+            type="number"
+            name="form-number"
+            id="form-number"
+            placeholder="Fill in your age"
+          />
+        </div>
+        <div class="form-components">
+          <label for="form-email">Your Email</label>
+          <input
+            type="email"
+            name="form-email"
+            id="form-email"
+            placeholder="Fill in your email"
+          />
+        </div>
+        <div class="form-components">
+          <label for="form-telephone">Your Telephone Number</label>
+          <input
+            type="tel"
+            name="form-telephone"
+            id="form-telephone"
+            placeholder="Fill in your telephone Number"
+          />
+        </div>
+        <div class="form-components">
+          <label for="form-date">Choose a Date for Appointment</label>
+          <input type="date" name="form-date" id="form-date" value="" />
+        </div>
+
+        <div class="form-components">
+          <label for="favorite-season">Choose Your Favorite Season</label>
+
+          <select name="favorite-season" id="favorite-season">
+            <option value="">Winter</option>
+            <option value="">Spring</option>
+            <option value="">Summer</option>
+            <option value="">Fall</option>
+          </select>
+        </div>
+
+        <fieldset id="form-wrap-checkbox">
+          <legend>Technologies</legend>
+          <div class="form-components">
+            <input
+              type="checkbox"
+              id="html-subject"
+              name="html-subject"
+              value="html"
+            />
+            <label for="html-subject"> Do you know html </label>
+          </div>
+          <div class="form-components">
+            <input
+              type="checkbox"
+              id="form-checkbox-css"
+              name="form-checkbox-css"
+              value="css"
+            />
+            <label for="form-checkbox-css">Do you know css</label>
+          </div>
+          <div class="form-components">
+            <input
+              type="checkbox"
+              id="form-checkbox-javascript"
+              name="form-checkbox-javascript"
+              value="javascript"
+            />
+            <label for="form-checkbox-javascript">Do you know javascript</label>
+          </div>
+          <div class="form-components">
+            <input
+              type="checkbox"
+              id="form-checkbox-php"
+              name="form-checkbox-php"
+              value="php"
+            />
+            <label for="form-checkbox-php"> Do you know php</label>
+          </div>
+        </fieldset>
+        <fieldset id="wrapper-for-radio-button">
+          <legend>Choose Your Speciality</legend>
+          <div class="form-components">
+            <input
+              type="radio"
+              id="form-choice-front-end"
+              name="webdevelopement"
+              value="frontend"
+            />
+            <label for="form-choice-front-end">front end webdevelopement</label>
+          </div>
+          <div class="form-components">
+            <input
+              type="radio"
+              id="form-choice-backend"
+              name="webdevelopement"
+              value="backend"
+            />
+            <label for="form-choice-backend">back end web development</label>
+          </div>
+        </fieldset>
+        <div class="form-components">
+          <label for="form-message">Message</label>
+          <textarea
+            name="form-message"
+            id="form-message"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div class="form-components">
+          <input type="submit" id="form-submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
