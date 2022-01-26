@@ -1,0 +1,26 @@
+:root {
+    --page-bg: #eaeff2;
+    --selection-blue: #007dfe;
+    --icons: #31302c;
+    --btn-light: #f9fafc;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: var(--page-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body, input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+#account-settings-panel {
+    max-width: 1080px;
+    background-color: #fff;
+    display: flex;
+}
