@@ -1,0 +1,269 @@
+:root {
+  --page-bg: #eaeff2;
+  --selection-blue: #007dfe;
+  --icons: #31302c;
+  --btn-light: #f9fafc;
+}
+html,
+body,
+#main-center-container {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  background-color: var(--page-bg);
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+#main-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+#modal-account-settings {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1080px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 0 rgba(4, 250, 4, 0.1);
+}
+
+#menu {
+  display: flex;
+  flex-basis: 20%;
+  flex-direction: column;
+  border-right: 1px solid rgb(240, 229, 229);
+  box-sizing: border-box;
+}
+
+.secondary-color {
+  background-color: var(--selection-blue);
+}
+#form-container {
+  padding: 30px;
+  flex-basis: 80%;
+}
+#form-container h2 {
+  margin-top: 0;
+  color: darkgray;
+}
+#profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#profile-section h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+#profile-image {
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("./man.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#profile-headline {
+  display: flex;
+}
+#profile-first-name,
+#profile-last-name {
+  flex-grow: 1;
+  margin-right: 5px;
+}
+#profile-first-name,
+#profile-last-name:last-child {
+  margin-right: none;
+}
+#navigation {
+  width: 100%;
+}
+
+nav ol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid gray;
+  list-style: none;
+}
+#text-color-active,
+#text-color-active a {
+  color: #fff;
+}
+
+nav li {
+  margin-bottom: 0;
+  border-top: 1px solid gray;
+  width: 100%;
+  margin-right: 0;
+  padding: 15px 0;
+}
+i {
+  margin-left: 10px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+nav li a {
+  color: #000;
+  text-decoration: none;
+}
+.form-split-row {
+  display: flex;
+}
+.form-split-row .form-col {
+  flex-basis: 50%;
+  margin-right: 15px;
+}
+.form-split-row .form-col:last-child {
+  margin-right: 0;
+}
+#form-split-buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+#form-split-buttons button {
+  margin-right: 10px;
+}
+#form-split-buttons button:last-child {
+  margin-right: 0;
+}
+#form-update-button {
+  background-color: var(--selection-blue);
+  color: #fff;
+  padding: 8px 15px;
+}
+#form-cancel-button {
+  background-color: --btn-light;
+}
+.form-col label {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 14px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+button {
+  box-sizing: border-box;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  border: 1px solid rgb(240, 229, 229);
+  margin-bottom: 20px;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* tablets */
+@media screen and (max-width: 768px) {
+  #main-center-container {
+    margin-top: 0;
+  }
+  #modal-account-settings {
+    display: block;
+  }
+  #menu,
+  #form-container {
+    flex-basis: auto;
+  }
+  nav li a,
+  #profile-section {
+    font-size: 20px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  button,
+  .form-col label {
+    font-size: 24px;
+  }
+}
+
+/* Smart Phones */
+@media screen and (max-width: 500px) {
+  #menu {
+    text-align: center;
+    flex-basis: 100%;
+  }
+  #profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  #profile-image {
+    margin: 0 auto;
+  }
+  nav li a,
+  #profile-section {
+    font-size: 20px;
+  }
+  nav ol {
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-security-user {
+    margin-left: -22px;
+  }
+  #form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  button,
+  .form-col label {
+    font-size: 22px;
+  }
+  .form-col label {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .form-split-row {
+    flex-direction: column;
+  }
+
+  .form-col input {
+    /*font-size: 5px;*/
+  }
+}
