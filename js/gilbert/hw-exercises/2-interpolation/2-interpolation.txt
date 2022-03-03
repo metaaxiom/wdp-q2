@@ -1,0 +1,3 @@
+Store each of the three names listed below in a variable, and then interpolate those variables into a string, to console.log() the following sentence:
+
+"My friends group includes John, Adam, and Mary."

@@ -1,0 +1,12 @@
+JavaScript's Math object provides us with certain properties and functions that come in handy when performing mathematical calculations. One such property, Math.PI, will return the π value to us, accurate to more decimal places than most of us remember (since most of us only remember that PI is around 3.14).
+
+To try out using this property, output Math.PI in the console.
+
+After you verify that it displays a long decimal number, do the below three exercises:
+
+
+1. Use the PI property to calculate the circumference of a circle. Given the formula C = 2πr, where r = 4, solve for C, replacing "π" with the Math.PI property. Make sure to store this calculation in a variable to that you can later output it. It may also be helpful to give the storing variable a name that's more descriptive than "C" (maybe "circum"?).
+
+2. The above exercise will always give the same result, because we hard-coded the radius value to be 4. So, let's make our circumference formula more dynamic. Create a function called "calcCircum", which accepts one parameter, called "radius", and uses it to find the circumference of a circle through the above formula. It then returns this value. Once you write this function, call it several times, providing different radius values, and console.log() them.
+
+3. Answer the question: does the function that you have written qualify as a "pure" function? (it may be helpful to reference my video on functions)

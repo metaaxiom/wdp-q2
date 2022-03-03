@@ -1,0 +1,3 @@
+Create two string variables: one that stores the word "Fizz", and another that stores the word "Buzz". Then concanete them together, without a space, to console.log() the following text:
+
+"FizzBuzz"

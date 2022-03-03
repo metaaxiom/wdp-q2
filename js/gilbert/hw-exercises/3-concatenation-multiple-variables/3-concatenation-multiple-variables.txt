@@ -1,0 +1,9 @@
+1. Create three string variables, each containing the name of a student (you can make up these names).
+
+2. Create three number variables, each containing a grade, between 0 and 100 (again, you can make up these values).
+
+3. Write three console.log's, each printing a student's name followed by a grade (one line per student). Which name you pair with which grade is up to you.
+
+TIP: Remember that you can use a comma within console.log() to print multiple clauses.
+
+BONUS: Print each line with a colon, in the following format: "Adam: 86"

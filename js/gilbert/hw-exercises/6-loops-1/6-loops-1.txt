@@ -1,0 +1,12 @@
+1. Create an array that stores 5 first names.
+2. Create an array that stores 5 last names.
+3. Create a loop (it can be either a while or a for loop), to iterate through the first names array.
+4. At each iteration of the loop, append a last names to the first name, and console log the result (example: "John Smith"). Make sure that each person has a unique last name.
+
+Example result:
+
+"John Smith"
+"Henry Cooper"
+"Adam Jones"
+"Megan Williams"
+"Greg Locke"
