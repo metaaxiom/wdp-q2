@@ -1,0 +1,15 @@
+1. Ask the user the following question, using prompt() and store the answer in a variable: "Whales belong to what class of animals?"
+2. Write an if statement to check the user's answer:
+	a. If the answer was "mammal", alert the response "Congratulations! You answered correctly".
+	b. If the answer was "fish", alert the response "This is a common misconception, but whales are not actually fish. Try again."
+	c. If the answer was anything else, alert the reponse, "Incorrect. Try again."
+
+HINT 1: Remember that an if statement can have multiple clauses (if, else if, else). See the article here for reference: https://javascript.info/ifelse
+
+BONUS 1: If you're up for the challenge, refactor the code so that the casing of the answer (whether the letters are uppercase or lowercase) does not matter (so that "Mammal", "mammal", "MAMMAL" or any other arrangement of lower / uppercase letters counts as a correct answer).
+
+HINT 2: Remember that you can use the someString.toLowerCase() and someString.toUpperCase() methods to your adventage: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
+
+BONUS 2: Refactor the code so that the signular and plural versions of an answer are both considered the same. In other words, "mammal" and "mammals" will lead to the same result.
+
+HINT 3: Remember that you can logical operators like && (AND), and || (OR) within an if statement to your adventage: https://javascript.info/logical-operators

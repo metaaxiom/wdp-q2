@@ -1,0 +1,2 @@
+1. Create a "for" loop that console logs all the EVEN numbers between 1 and 100.
+2. Create a "for" loop that console logs all the ODD numbers between 1 and 100.

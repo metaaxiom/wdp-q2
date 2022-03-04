@@ -1,0 +1,5 @@
+1. Create a string variable that stores a password (it can be anything you like).
+2. Use prompt() to ask the user for a password, and store the user's answer in another variable.
+3. Using the "if" statement, check whether the password that the user entered matches the actual password.
+4. If the password matches, display an alert to the user that they've been allowed to view the website.
+5. Else (if the password doesn't match), display a message that the password entered was incorrect.
