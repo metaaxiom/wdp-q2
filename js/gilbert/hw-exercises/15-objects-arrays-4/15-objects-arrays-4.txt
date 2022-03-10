@@ -1,0 +1,6 @@
+THIS IS UNFINISHED. I WILL COMPLETE ONCE WE COVER MORE MATERIAL.
+
+
+Whenever we create a string variable, no matter its value, it automatically receives access to various properties and methods that all strings have (length, split(), etc.). Whenever we create a number variable, no matter its value, it automatically receives access to various properties and methods that all numbers have. The same is true of booleans, arrays, objects, and any other data types we may think of.
+
+As we have already learned, "console" is an object, from which we can access the method "log". A "method" is simply a function that exists within a particular object. Many built-in objects that come with JavaScript contain not only methods, but also properties.

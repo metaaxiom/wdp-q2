@@ -1,0 +1,6 @@
+For each of the below questions, answer which collection would be the preferable way to store the given data: an array or an object?
+
+1. A list of names, ordered alphabetically.
+2. A collection of statistics about a professional soccer player: the club he plays for, his position on the field, number of goals scored, etc.
+3. Information about a specific movie, like its title, description, runtime, release date, actors featured, etc.
+4. Student grades, arranged from least to greatest.

@@ -1,0 +1,1 @@
+Create a movie object that stores a few (3-4) basic pieces of information about a specific movie, like its title, description, release date, etc. Then, console.log all of these pieces of information individually.
