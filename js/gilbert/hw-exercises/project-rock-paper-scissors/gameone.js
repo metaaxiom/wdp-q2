@@ -13,6 +13,7 @@ let choiceBtnsArr = [
   document.getElementById('scissors-choice-btn')
 ];
 
+
 // forEach is just like a for loop
 // it iterates through every element in an array
 choiceBtnsArr.forEach(choiceBtn => {
