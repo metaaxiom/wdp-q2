@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock scissors paper game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+    <script
+      src="https://kit.fontawesome.com/bae68fcb26.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="center-container">
+      <div id="scoreboard">
+        <h2>Scoreboard</h2>
+        <ul></ul>
+      </div>
+
+      <div id="choice-btns-wrapper">
+        <button id="rock-choice-btn" class="choice-btns" value="rock">
+          <i class="fas fa-hand-rock"></i>
+          <span class="choice-btn-text">Rock</span>
+        </button>
+
+        <button id="paper-choice-btn" class="choice-btns" value="paper">
+          <i class="fas fa-hand-paper"></i>
+          <span class="choice-btn-text">Paper</span>
+        </button>
+
+        <button id="scissors-choice-btn" class="choice-btns" value="scissors">
+          <i class="fas fa-hand-scissors"></i>
+          <span class="choice-btn-text">Scissors</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="gameone.js"></script>
+  </body>
+</html>
