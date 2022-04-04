@@ -1,0 +1,23 @@
+For this assignment, you will build a portfolio website for yourself, where you will be able to display your various web design or programming projects. My hope is that - if you decide to host this portfolio live - it will make for an easy way of showing proof of your skills to prospective employers.
+
+The website can be single-page or multi-page. If you decide to make it single-page, this may potentially remove the need for a backend programming language like PHP, but may make it harder to display your various programming projects clearly (since you'll be limited to displaying a lot of information on one page). If you decide to make it multi-page, it will allow you to display each project on its own, dedicated page, but may the whole assignment a little more involved, since we'll need a backend programming language. Don't worry if you don't understand this entirely; we will talk more about this during class.
+
+Since there are several free hosting options for STATIC websites (just HTML, CSS, and JS, without any backend programming), I suggest we build this assignment as a single-page website. That way, you'll be able to host your portfolio live without paying anything for it.
+
+------
+
+As the first step of any project is gathering the relevant information, I suggest starting this assignment by Googling around for portfolio websites of other developers (you can search terms like, "web developer in [your state]"). Find several personal websites of a few individual developers, and analyze their sites' designs. Pay attention to how they laid out the major elements on the page, what color scheme they used, and how they choose to display their various projects.
+
+Here's one portfolio site I found: http://johntracydesign.com/
+
+We want to find sites with fairly simple designs. Some portfolio websites are very avant-garde, but I think it's best that we avoid such sites for now, until we have a good grip on building basic websites.
+
+Once you have an idea of how other web developers choose to design their portfolio websites, pick out the elements of their sites that you like the most, and begin thinking about how you could incorporate them in your own design.
+
+Initially, I recommend concentrating on the layout.
+
+Once you have some idea of what the layout should be, you can start thinking about a color scheme. Generally speaking, most websites choose about 3-5 colors that they stick to throughout all their pages. How many colors you choose, and which ones you choose if of course up to you, but the color scheme should fit the purpose of the website. For example, if you want to convey professionalism, then the color scheme shouldn't include any overly-"loud" colors.
+
+If you want to play it safe, a good bet is choosing white for the background, one or two shades of gray for borders and other elements, and one vibrant accent color (like red, blue, green) for buttons, highlights, logo, etc. This is just a suggestions, however.
+
+You may find this website useful for creating a color scheme: https://coolors.co/f7b2b7-f7717d-de639a-7f2982-16001e

@@ -1,0 +1,12 @@
+1. Create a div with a border on all four sides and give it a width and height of about 500px by 500px (you can choose a different size, if you prefer).
+2. Create a button below that says, "Generate Circle".
+3. In CSS, create a class "generated-circle", and give it a width and height of about 50px, along with a red background color, a border-radius of 100%, and padding of 10px on all sides.
+4. Add a click event listener to the button that you have created, and within its callback function, have JS generate a new div element using document.createElement("div"). Assign this new div the class "generated-circle", and then insert it into the 500px-500px box. You can accomplish this using the appendChild() method:
+
+HINT:
+
+// Create a new paragraph element, and append it to the end of the document body
+let p = document.createElement("p");
+document.body.appendChild(p);
+
+When completed, the program should generate a new red circle within the large box whenever the user clicks the button.

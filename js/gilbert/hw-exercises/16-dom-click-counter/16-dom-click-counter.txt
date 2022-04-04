@@ -1,0 +1,9 @@
+PART 1
+======
+
+Make a button in HTML, and display a small div above it that will be used to display a number. The number should start at 0. Apply a JS "click" event listener to the button, so that whenever the button is clicked the number displayed in the div is incremented by 1.
+
+PART 2
+======
+
+Modify the event listener to instead increment the number not on click, but on hover (tip: the name for this event is not "hover", but "onmouseover").

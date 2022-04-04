@@ -1,0 +1,85 @@
+For this project, we will create a "Rock, Paper, Scissors" game in which a user plays against the computer. The user will pick his choice, but the computer will randomly generate his. Though basic, this game will allow intermediate knowledge of JavaScript (and so, will hopefully be a good learning exercise).
+
+
+PART 1:
+=======
+
+Use HTML & CSS to build a user interface for a "Rock, Paper, Scissors" game. You're welcome to make it look however you want, so long as the design makes sense and is pleasant to look at.
+
+However, a safe bet that would be easy to work with involves creating three buttons: one for Rock, one for Paper, and one for Scissors. If you'd like, you can spruce these buttons up by adding to them icons of their respective "weapons" (FontAwesome can help with that). Then, somewhere below or above these buttons, we could have space for a box, where the score of the game would be recorded.
+
+Label and position everything accordingly.
+
+
+PART 2:
+=======
+
+Use what you have learned about JavaScript to produce an alert on the screen whenever any of the buttons are clicked. You will require an event listener for this. At this stage, it's important to have all your relevant HTML elements set with the right identifiers (either IDs or classes).
+
+
+PART 3:
+=======
+
+Make it so that the alert always says which of the three buttons was clicked ("Rock", "Paper", or "Scissors"). You may find the "value" property useful here.
+
+BONUS: Try to accomplish the above without creating three seperate event listeners (which is inefficient).
+
+
+PART 4:
+=======
+
+Instead of alerting which button was clicked, display it in the score box, which you created in Part 1.
+
+BONUS: Make it so that text written to the score box doesn't override the previous text displayed there, but gets appended to the previous results there, on a next line.
+
+
+TO BE CONTINUED...
+
+
+PART 5:
+=======
+
+Since the user is playing against a computer in this game, we need to define how JavaScript will "choose" an option. Because computers can't truly make their own choices, this behavior will have to be programmed. However, as we want the game to be fair for the user, we don't want JS to have any special advantage when picking an option. Hence, we must ensure that JavaScript's process of selecting a choice will be random, just like the user's. While computers can't make truly random guesses (because they can't make their own choices in general), this behavior can be easily simulated.
+
+Please look at the documentation for the Math.random() method:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
+Running it on its own, without any calculations will return a random number between 0 and 1 (so, most of the time it will be a decimal). If you try console logging it, you should get a different number every time you refresh the page. Note that this function is not truly "random"; it actually selects a number from the range 0 - 1, based on a complex algorithm, and what allows the algorithm to return a different value most of the time is the fact that it uses time as one of its variables.
+
+This simple function can be used to simulate all kinds of random selections, not just numerical ones. So, let's see how we can apply it to our game.
+
+First, let's figure out how we can control the range within which Math.random() makes selections. As an exercise, let's try to make the method pick integers between 1 and 10 (since that feels more natural than the decimal range of 0 to 1).
+
+We can increase the range simply by multiplying the function like this:
+
+Math.random() * 10
+
+Now, we're getting numbers between 1 and 10. But what can we do to strip off the decimals? JavaScript provides us with two functions that we can use here:
+
+1. Math.floor(), which ALWAYS rounds numbers DOWN (5.1 -> 5 and 5.9 -> 5).
+2. Math.ceil(), which ALWAYS rounds numbers UP (5.1 -> 6, and 5.9 -> 6).
+
+For our example we can wrap what we have written previously in the Math.ceil() method like so:
+
+Math.ceil( Math.random() * 10 )
+
+Great. The above should now return integers between 1 and 10.
+
+Now, let's apply what we have learned here to our game.
+
+Since we will need the computer to choose between 3 options, modify the above code to choose within the integer range of 0 to 2.
+
+
+PART 6
+======
+
+Now that we have a mechanism by which JS makes a random choice between three integers (0, 1, or 2), we need to translate this into choosing between three "weapons": rock, paper, or scissors.
+
+Create an array that stores these three choices as strings. Then, apply the random method that you have written to select an index from the array.
+
+If you got this far, we now have a means by which the computer that our user will be playing against will be making a choice.
+
+PART 7
+======
+
+Move the code where JS picks a choice into the event listener method, so that computer chooses an option right after the user clicks a button. Then, have the computer's choice display in the scorebox right alongside the user's choice.
