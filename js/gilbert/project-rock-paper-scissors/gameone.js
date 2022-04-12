@@ -13,22 +13,53 @@ let choiceBtnsArr = [
   document.getElementById('scissors-choice-btn')
 ];
 
+let choices = ["rock", "paper", "scissors"];
+
+// only displays comparisons in terms of the winners
+// the first choice in each string is always the winner
+let comparisons = [
+  "rock>scissors",
+  "paper>rock",
+  "scissors>paper"
+];
 
 // forEach is just like a for loop
 // it iterates through every element in an array
 choiceBtnsArr.forEach(choiceBtn => {
   // apply event listener for every choiceBtn
   choiceBtn.addEventListener('click', (e) => {
+    let userChoice = choiceBtn.value;
+
+    // have computer randomly generate choice
+    // generate a random number between 0-2
+    let compChoiceIdx = Math.floor(Math.random() * 3);
+    let compChoice = choices[compChoiceIdx];
 
     // create empty li
     let newScoreboardLi = document.createElement('li');
     // set the new li's text
-    newScoreboardLi.innerText = choiceBtn.value;
+    newScoreboardLi.innerText = `User chose ${userChoice}, computer chose ${compChoice}.`;
+
+    // determine win, loss, or tie
+    if(userChoice == compChoice){
+      // TIE
+      newScoreboardLi.innerText += " TIE!";
+    }else{
+      // NOT A TIE: SO EITHER USER OR COMPUTER WON
+      let comparison = `${userChoice}>${compChoice}`;
+      // see if the comparions array contains the comparison string
+        // it may contain it (if the user won), or it may not (if the user lost)
+        // if it doesn't contain it, it's going to return undefined
+      let comparisonMatch = comparisons.find(c => c == comparison);
+      if(comparisonMatch != undefined){
+        newScoreboardLi.innerText += " USER WON!";
+      }else{
+        newScoreboardLi.innerText += " COMPUTER WON!";
+      }
+    }
+
     // add the new li element to the scoreboard's ul
     scoreboardUl.appendChild(newScoreboardLi);
-
-    // old, less ideal way
-    //scoreboardUl.innerHTML = scoreboardUl.innerHTML + '<li>' + choiceBtn.value + '</li>';
   });
 });
 

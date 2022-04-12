@@ -1,0 +1,13 @@
+#generate-container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+.generated-circle {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    background-color: red;
+    border-radius: 100%;
+    display: inline-block;
+}

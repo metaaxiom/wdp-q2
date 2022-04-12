@@ -1,0 +1,23 @@
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 25%;
+  background-color: rgb(163, 163, 180);
+}
+#clicable-button,
+#latest-score {
+  font-size: 30px;
+  background-color: aquamarine;
+  cursor: pointer;
+}

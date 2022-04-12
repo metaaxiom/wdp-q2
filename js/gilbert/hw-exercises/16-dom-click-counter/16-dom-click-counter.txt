@@ -6,4 +6,4 @@ Make a button in HTML, and display a small div above it that will be used to dis
 PART 2
 ======
 
-Modify the event listener to instead increment the number not on click, but on hover (tip: the name for this event is not "hover", but "onmouseover").
+Modify the event listener to instead increment the number not on click, but on hover (tip: the name for this event is not "hover", but "mouseover").
